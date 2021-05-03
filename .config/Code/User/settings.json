@@ -1,0 +1,140 @@
+// ~/.config/Code/User/settings.json
+{
+  // editor
+  "editor.fontSize": 16,
+  "editor.fontFamily": "Fira Code Retina",
+  "editor.fontLigatures": true,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.autoIndent": "full",
+  "editor.renderLineHighlight": "gutter",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.parameterHints.enabled": false,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.colorDecorators": true,
+  //workbench
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.activityBar.visible": true,
+  "workbench.colorCustomizations": {},
+  "workbench.editor.labelFormat": "short",
+  //files
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    "**/templates/*.html": "django-html",
+    "**/templates/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  "files.hotExit": "off",
+  //explorer
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  // terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  "terminal.integrated.shellArgs.linux": [
+    "--login"
+  ],
+  //git
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  // emmet
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // extensions
+  "extensions.ignoreRecommendations": true,
+  // eslint
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  // liveServer
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.mount": [
+    [
+      "/lib",
+      "./lib"
+    ],
+    [
+      "/src",
+      "./src"
+    ]
+  ],
+  // intellicode
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // javascript
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.tsserver.log": "verbose",
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
+  // python
+  "python.languageServer": "Microsoft",
+  // html
+  "html.suggest.html5": true,
+  "html.autoClosingTags": true,
+  "html.validate.scripts": true,
+  "html.validate.styles": true,
+  // css
+  "css.validate": true,
+  "scss.validate": true,
+  "css.lint.important": "warning",
+  "scss.lint.important": "warning",
+  "css.lint.float": "warning",
+  "scss.lint.float": "warning",
+  "css.lint.ieHack": "warning",
+  "scss.lint.ieHack": "warning",
+  "css.lint.zeroUnits": "warning",
+  "scss.lint.zeroUnits": "warning",
+  "css.lint.duplicateProperties": "warning",
+  "scss.lint.duplicateProperties": "warning",
+  // rubocop
+  "ruby.rubocop.executePath": "/usr/local/bin/",
+  "ruby.rubocop.configFilePath": ".rubocop.yml",
+  "ruby.rubocop.onSave": true,
+  "liveshare.authenticationProvider": "GitHub",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "git.confirmSync": false,
+  "elixir.credo.ignoreWarningMessages": true,
+  "elixir.credo.lintEverything": true,
+  "elixir.credo.strictMode": true,
+  "elixirLS.dialyzerEnabled": false,
+  "elixirLS.suggestSpecs": false
+}

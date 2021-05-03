@@ -1,0 +1,7 @@
+[user]
+	name = Leonardo Gurgel
+	email = lgurgel@id.uff.br
+[color]
+	ui = auto
+[pull]
+	rebase = false

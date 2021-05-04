@@ -47,24 +47,7 @@
 # Docker
 # sudo usermod -aG docker USERNAME
 
-export EDITOR=vim
-
-# Environment Variables
-export ANDROID_HOME=~/Android/Sdk
-export PATH="$PATH:$ANDROID_HOME/tools"
-export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:/usr/local/bin"
-export PATH="$HOME/.fastlane/bin:$PATH"
-export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:/snap/bin"
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# rvm
-export PATH="$PATH:$HOME/.rvm/bin"
 
 # oh my zsh config
 ZSH_THEME="spaceship"
@@ -122,12 +105,20 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="$"
 SPACESHIP_CHAR_SUFFIX=" "
 
-# gcloud config
-if [ -f '/home/gurja/google-cloud-sdk/path.zsh.inc' ]; then . '/home/gurja/google-cloud-sdk/path.zsh.inc'; fi
-if [ -f '/home/gurja/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/gurja/google-cloud-sdk/completion.zsh.inc'; fi
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
 
-# gh completion
-source ~/.gh-completion.sh
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# colored GCC warnings and errors
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # aliases
 alias c="clear"
@@ -146,9 +137,6 @@ alias cd..="cd .."
 alias cd...="cd ../.."
 alias cd....="cd ../../../"
 alias dev="cd ~/dev"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to path for scripting (to manage Ruby versions)
-export PATH="$GEM_HOME/bin:$PATH"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # Load RVM into a shell session *as a function*
-
-export LD_LIBRARY_PATH=/opt/oracle/instantclient_12_2
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'

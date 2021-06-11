@@ -18,6 +18,7 @@ export PATH="$PATH:/usr/local/bin"
 export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/snap/bin"
+export PATH="/home/linuxbrew/.linuxbrew/opt/mysql@5.7/bin:$PATH"
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
@@ -61,6 +62,8 @@ source ~/.gh-completion.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# mysql
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/mysql@5.7/include"
 
 # rvm
 export PATH="$GEM_HOME/bin:$PATH"

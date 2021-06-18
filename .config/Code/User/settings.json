@@ -42,10 +42,16 @@
   "explorer.compactFolders": false,
   // terminal
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.shell.linux": "/bin/zsh",
-  "terminal.integrated.shellArgs.linux": [
-    "--login"
-  ],
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "/bin/zsh",
+      "args": [
+        "--login"
+      ],
+      "color": "terminal.ansiCyan"
+    },
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
   //git
   "git.enableSmartCommit": true,
   "git.autofetch": true,
@@ -125,12 +131,9 @@
   "ruby.rubocop.configFilePath": ".rubocop.yml",
   "ruby.rubocop.onSave": true,
   "liveshare.authenticationProvider": "GitHub",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "git.confirmSync": false,
   "elixir.credo.ignoreWarningMessages": true,
   "elixir.credo.lintEverything": true,

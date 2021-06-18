@@ -45,12 +45,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export GOROOT="/usr/lib/go"
 export PATH="$PATH:$GOROOT/bin"
 
-# oracle
-export LD_LIBRARY_PATH=/opt/oracle/instantclient_12_2
-
-# brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 # gcloud config
 if [ -f '/home/gurja/google-cloud-sdk/path.zsh.inc' ]; then . '/home/gurja/google-cloud-sdk/path.zsh.inc'; fi
 if [ -f '/home/gurja/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/gurja/google-cloud-sdk/completion.zsh.inc'; fi
@@ -61,10 +55,3 @@ source ~/.gh-completion.sh
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# mysql
-export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/mysql@5.7/include"
-
-# rvm
-export PATH="$GEM_HOME/bin:$PATH"
-export PATH="$PATH:$HOME/.rvm/bin"

@@ -140,3 +140,17 @@ alias dev="cd ~/dev"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+# brew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# mysql
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/mysql@5.7/include"
+
+# oracle
+export LD_LIBRARY=/opt/oracle/instant_client_12_2
+
+# rvm
+export PATH="$GEM_HOME/bin:$PATH"
+export PATH="$PATH:$HOME/.rvm/bin"
+

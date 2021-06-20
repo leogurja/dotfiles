@@ -141,6 +141,18 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+export EDITOR=vim
+
+# Environment Variables
+export ANDROID_HOME=~/Android/Sdk
+export PATH="$PATH:$ANDROID_HOME/tools"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:/usr/local/bin"
+export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:/snap/bin"
+export PATH="/home/linuxbrew/.linuxbrew/opt/mysql@5.7/bin:$PATH"
+
 # brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
@@ -150,7 +162,24 @@ export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/mysql@5.7/include"
 # oracle
 export LD_LIBRARY=/opt/oracle/instant_client_12_2
 
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# go
+export GOROOT="/usr/lib/go"
+export PATH="$PATH:$GOROOT/bin"
+
+# gcloud config
+if [ -f '/home/gurja/google-cloud-sdk/path.zsh.inc' ]; then . '/home/gurja/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/home/gurja/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/gurja/google-cloud-sdk/completion.zsh.inc'; fi
+
+# gh completion
+source ~/.gh-completion.sh
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # rvm
 export PATH="$GEM_HOME/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
-

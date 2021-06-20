@@ -22,7 +22,7 @@
   "editor.tabSize": 2,
   "editor.colorDecorators": true,
   //workbench
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Material Theme Darker",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": true,

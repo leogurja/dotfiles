@@ -8,18 +8,6 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-export EDITOR=vim
-
-# Environment Variables
-export ANDROID_HOME=~/Android/Sdk
-export PATH="$PATH:$ANDROID_HOME/tools"
-export PATH="$PATH:$ANDROID_HOME/platform-tools"
-export PATH="$PATH:/usr/local/bin"
-export PATH="$HOME/.fastlane/bin:$PATH"
-export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:/snap/bin"
-export PATH="/home/linuxbrew/.linuxbrew/opt/mysql@5.7/bin:$PATH"
-
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -37,21 +25,3 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-
-# rust
-export PATH="$HOME/.cargo/bin:$PATH"
-
-# go
-export GOROOT="/usr/lib/go"
-export PATH="$PATH:$GOROOT/bin"
-
-# gcloud config
-if [ -f '/home/gurja/google-cloud-sdk/path.zsh.inc' ]; then . '/home/gurja/google-cloud-sdk/path.zsh.inc'; fi
-if [ -f '/home/gurja/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/gurja/google-cloud-sdk/completion.zsh.inc'; fi
-
-# gh completion
-source ~/.gh-completion.sh
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

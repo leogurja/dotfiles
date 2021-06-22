@@ -1,18 +1,8 @@
 #!/bin/bash
-############################
-# .make.sh
-# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
-############################
 
-########## Variables
+dir=$(pwd)
+olddir=$dir/dotfiles_old
 
-# dotfiles directory
-dir=~/dev/dotfiles
-
-# old dotfiles backup directory
-olddir=~/dev/dotfiles/dotfiles_old
-
-# list of files/folders to symlink in homedir
 files="
   .bash_profile
   .bash_logout
@@ -25,9 +15,8 @@ files="
   .config/Code/User/settings.json
   .config/Code/User/keybindings.json
   .gh-completion.sh
+  .fonts
 "
-
-##########
 
 # create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."

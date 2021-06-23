@@ -44,8 +44,13 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.profiles.linux": {
     "zsh": {
-      "path": "/bin/zsh",
-      "color": "terminal.ansiCyan"
+      "path": "flatpak-spawn",
+      "color": "terminal.ansiCyan",
+      "args": [
+        "--host",
+        "zsh"
+      ],
+      "overrideName": true
     },
   },
   "terminal.integrated.defaultProfile.linux": "zsh",

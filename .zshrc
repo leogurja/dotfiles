@@ -2,30 +2,20 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # oh my zsh config
 ZSH_THEME="spaceship"
-plugins=(git)
+plugins=(
+  git
+  zsh-autosuggestions
+  colored-man-pages
+  colorize
+  common-aliases
+  fast-syntax-highlighting
+  copyfile
+  sudo
+)
 
 source $ZSH/oh-my-zsh.sh
 
-### Added by Zinit's installer
-if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
-    print -P "%F{33}▓▒░ %F{220}Installing DHARMA Initiative Plugin Manager (zdharma/zinit)…%f"
-    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
-    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
-        print -P "%F{33}▓▒░ %F{34}Installation successful.%f" || \
-        print -P "%F{160}▓▒░ The clone has failed.%f"
-fi
-source "$HOME/.zinit/bin/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
-### End of Zinit installer's chunk
-
-# zplugins
-zplugin light zdharma/fast-syntax-highlighting
-zplugin light zsh-users/zsh-autosuggestions
-zplugin light zsh-users/zsh-history-substring-search
-zplugin light zsh-users/zsh-completions
-zplugin light buonomo/yarn-completion
-
+# better paste
 pasteinit() {
   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
   zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
@@ -34,8 +24,6 @@ pasteinit() {
 pastefinish() {
   zle -N self-insert $OLD_SELF_INSERT
 }
-zstyle :bracketed-paste-magic paste-init pasteinit
-zstyle :bracketed-paste-magic paste-finish pastefinish
 
 # spaceship config
 SPACESHIP_PROMPT_ORDER=(
@@ -43,29 +31,23 @@ SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section
   host          # Hostname section
   git           # Git section (git_branch + git_status)
-  hg            # Mercurial section (hg_branch  + hg_status)
   exec_time     # Execution time
-  line_sep      # Line break
-  vi_mode       # Vi-mode indicator
-  jobs          # Background jobs indicator
   exit_code     # Exit code section
+  line_sep      # Line break
+  jobs          # Background jobs indicator
   char          # Prompt character
 )
-SPACESHIP_USER_SHOW=always
-SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="$"
 SPACESHIP_CHAR_SUFFIX=" "
+SPACESHIP_USER_SHOW=always
+SPACESHIP_EXIT_CODE_SHOW=true
+SPACESHIP_EXIT_CODE_SYMBOL="✘ "
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
     alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
 fi
 
 # colored GCC warnings and errors
@@ -73,28 +55,17 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 
 # aliases
 alias c="clear"
-alias cls="clear"
 alias g="git"
 alias q="exit"
 alias copy="xclip -sel clip <"
 alias out="shutdown now"
-
-# config aliases
-alias zshconfig="vim ~/.zshrc"
-alias reloadconfig="source ~/.zshrc"
-
-# navigation aliases
 alias cd..="cd .."
-alias cd...="cd ../.."
-alias cd....="cd ../../../"
 alias dev="cd ~/Projetos"
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias code="flatpak run com.visualstudio.code"
 
-export EDITOR=vim
 
 # Environment Variables
+export EDITOR=vim
 export ANDROID_HOME=~/Android/Sdk
 export PATH="$PATH:$ANDROID_HOME/tools"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
@@ -117,7 +88,7 @@ export LD_LIBRARY=/opt/oracle/instant_client_12_2
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # go
-export GOROOT="/usr/lib/go"
+export GOROOT="/usr/lib/golang"
 export PATH="$PATH:$GOROOT/bin"
 
 # gcloud config

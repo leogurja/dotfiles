@@ -21,12 +21,12 @@
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.colorDecorators": true,
-  //workbench
-  "workbench.colorTheme": "Material Theme Darker",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": true,
-  "workbench.colorCustomizations": {},
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#6d47a6",
+  },
   "workbench.editor.labelFormat": "short",
   //files
   "files.associations": {
@@ -44,11 +44,10 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.profiles.linux": {
     "zsh": {
-      "path": "flatpak-spawn",
+      "path": "/bin/zsh",
       "color": "terminal.ansiCyan",
       "args": [
-        "--host",
-        "zsh"
+        "--login"
       ],
       "overrideName": true
     },
@@ -128,14 +127,21 @@
   "scss.lint.zeroUnits": "warning",
   "css.lint.duplicateProperties": "warning",
   "scss.lint.duplicateProperties": "warning",
-  // rubocop
-  "ruby.rubocop.executePath": "/usr/local/bin/",
-  "ruby.rubocop.configFilePath": ".rubocop.yml",
-  "ruby.rubocop.onSave": true,
   "liveshare.authenticationProvider": "GitHub",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
+  // ruby
+  "solargraph.useBundler": true,
+  "solargraph.diagnostics": true,
+  "solargraph.completion": true,
+  "solargraph.definitions": true,
+  "solargraph.references": true,
+  "solargraph.rename": true,
+  "solargraph.symbols": true,
+  "solargraph.hover": true,
+  "solargraph.formatting": true,
+  "solargraph.folding": true,
   "git.confirmSync": false,
   "elixir.credo.ignoreWarningMessages": true,
   "elixir.credo.lintEverything": true,

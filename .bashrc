@@ -125,3 +125,5 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/mysql@5.7/include"
 export LD_LIBRARY=/opt/oracle/instant_client_12_2
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -12,8 +12,8 @@ files="
   .profile
   .zshrc
   .gitconfig
-  .var/app/com.visualstudio.code/config/Code/User/settings.json
-  .var/app/com.visualstudio.code/config/Code/User/keybindings.json
+  .config/Code-OSS/User/settings.json
+  .config/Code-OSS/User/keybindings.json
   .gh-completion.sh
   .fonts
 "

@@ -3,14 +3,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # oh my zsh config
 ZSH_THEME="spaceship"
 plugins=(
-  git
   zsh-autosuggestions
   colored-man-pages
   colorize
-  common-aliases
   fast-syntax-highlighting
-  copyfile
-  sudo
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -54,18 +50,15 @@ fi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # aliases
-alias c="clear"
 alias g="git"
-alias q="exit"
+alias q="exit 0"
 alias copy="xclip -sel clip <"
 alias out="shutdown now"
-alias cd..="cd .."
 alias dev="cd ~/Projetos"
-alias code="flatpak run com.visualstudio.code"
-
+alias vim="nvim"
 
 # Environment Variables
-export EDITOR=vim
+export EDITOR=nvim
 export ANDROID_HOME=~/Android/Sdk
 export PATH="$PATH:$ANDROID_HOME/tools"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
@@ -82,14 +75,17 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/mysql@5.7/include"
 
 # oracle
-export LD_LIBRARY=/opt/oracle/instant_client_12_2
+export LD_LIBRARY_PATH="$HOME/.local/share/sti/instantclient_12_2"
+export PATH="$PATH:$LD_LIBRARY_PATH"
+export TNS_ADMIN=$HOME/.oracle
+export ORACLE_SID=ORCLCDB
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # go
-export GOROOT="/usr/lib/golang"
-export PATH="$PATH:$GOROOT/bin"
+export GOPATH=$HOME/go
+export PATH="$PATH:$GOPATH/bin"
 
 # gcloud config
 if [ -f '/home/gurja/google-cloud-sdk/path.zsh.inc' ]; then . '/home/gurja/google-cloud-sdk/path.zsh.inc'; fi
@@ -105,3 +101,5 @@ export NVM_DIR="$HOME/.nvm"
 # rvm
 export PATH="$GEM_HOME/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

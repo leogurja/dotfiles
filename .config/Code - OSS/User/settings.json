@@ -43,8 +43,8 @@
   // terminal
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.profiles.linux": {
-    "zsh": {
-      "path": "/bin/zsh",
+    "bash": {
+      "path": "/bin/bash",
       "color": "terminal.ansiCyan",
       "args": [
         "--login"
@@ -52,7 +52,7 @@
       "overrideName": true
     },
   },
-  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.linux": "bash",
   //git
   "git.enableSmartCommit": true,
   "git.autofetch": true,
@@ -108,7 +108,7 @@
     "editor.formatOnSave": false
   },
   // python
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Default",
   // html
   "html.suggest.html5": true,
   "html.autoClosingTags": true,

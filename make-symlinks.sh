@@ -4,13 +4,10 @@ dir=$(pwd)
 olddir=$dir/dotfiles_old
 
 files="
+  .bash_aliases
   .bash_profile
   .bash_logout
   .bashrc
-  .zlogin
-  .zprofile
-  .profile
-  .zshrc
   .gitconfig
   .config/Code-OSS/User/settings.json
   .config/Code-OSS/User/keybindings.json

@@ -63,7 +63,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export LD_LIBRARY_PATH="$HOME/.local/share/sti/instantclient_12_2"
 export PATH="$PATH:$LD_LIBRARY_PATH"
 export TNS_ADMIN=$HOME/.oracle
-export ORACLE_SID=ORCLCDB
+export ORACLE_SID=ORCLPDB1
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"

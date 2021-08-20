@@ -11,6 +11,7 @@ files="
   .gitconfig
   .config/Code-OSS/User/settings.json
   .config/Code-OSS/User/keybindings.json
+  .config/starship.toml
   .config/electron-flags.conf
   .config/electron12-flags.conf
   .gh-completion.sh

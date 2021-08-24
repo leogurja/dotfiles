@@ -48,12 +48,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# oracle
-export LD_LIBRARY_PATH="$HOME/.local/share/sti/instantclient_12_2"
-export PATH="$PATH:$LD_LIBRARY_PATH"
-export TNS_ADMIN=/home/leonardo/.config/sti/oracle
-export ORACLE_SID=ORCLPDB1
-
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
@@ -76,4 +70,12 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # starship
 eval "$(starship init bash)"
+
+export LD_LIBRARY_PATH=/home/leonardo/.local/share/sti/instantclient_12_2
+
+export PATH="$PATH:$LD_LIBRARY_PATH"
+
+export TNS_ADMIN=/home/leonardo/.config/sti/oracle
+
+export ORACLE_SID=ORCLPDB1
 

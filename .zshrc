@@ -37,12 +37,6 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/snap/bin"
 
-# oracle
-export LD_LIBRARY_PATH="$HOME/.local/share/sti/instantclient_12_2"
-export PATH="$PATH:$LD_LIBRARY_PATH"
-export TNS_ADMIN=/home/leonardo/.config/sti/oracle
-export ORACLE_SID=ORCLPDB1
-
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
@@ -61,6 +55,12 @@ source ~/.gh-completion.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# oracle
+export LD_LIBRARY_PATH="/home/leonardo/.local/share/sti/instantclient_12_2"
+export PATH="$PATH:$LD_LIBRARY_PATH"
+export TNS_ADMIN="/home/leonardo/.config/sti/oracle"
+export ORACLE_SID=ORCLPDB1
+
 # rvm
 export PATH="$GEM_HOME/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -69,3 +69,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # starship
 eval "$(starship init zsh)"
+export PATH="$PATH:/home/leonardo/.local/share/sti/mysql-5.7.34-linux-glibc2.12-x86_64/bin"
+

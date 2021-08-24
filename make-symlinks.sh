@@ -16,6 +16,7 @@ files="
   .config/electron12-flags.conf
   .gh-completion.sh
   .fonts
+  .zshrc
 "
 
 # create dotfiles_old in homedir

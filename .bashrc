@@ -13,7 +13,6 @@ export PATH="$PATH:/usr/local/bin"
 export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/snap/bin"
-export PATH="/home/linuxbrew/.linuxbrew/opt/mysql@5.7/bin:$PATH"
 
 # Shopt
 shopt -s cmdhist # multi-line commands as single line
@@ -40,24 +39,14 @@ bind "set completion-prefix-display-length 2"
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # Alias definitions
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
 fi
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# mysql
-export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/mysql@5.7/include"
-
-# oracle client
-export LD_LIBRARY=/opt/oracle/instant_client_12_2
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # oracle
 export LD_LIBRARY_PATH="$HOME/.local/share/sti/instantclient_12_2"
@@ -75,6 +64,9 @@ export PATH="$PATH:$GOPATH/bin"
 # gh completion
 source ~/.gh-completion.sh
 
+# mysql
+export PATH="$PATH:/home/leonardo/.local/share/sti/mysql-5.7.34-linux-glibc2.12-x86_64/bin"
+
 # rvm
 export PATH="$GEM_HOME/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -84,3 +76,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # starship
 eval "$(starship init bash)"
+

@@ -40,7 +40,7 @@ export PATH="$PATH:/snap/bin"
 # oracle
 export LD_LIBRARY_PATH="$HOME/.local/share/sti/instantclient_12_2"
 export PATH="$PATH:$LD_LIBRARY_PATH"
-export TNS_ADMIN=$HOME/.oracle
+export TNS_ADMIN=/home/leonardo/.config/sti/oracle
 export ORACLE_SID=ORCLPDB1
 
 # rust

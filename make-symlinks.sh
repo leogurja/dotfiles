@@ -4,7 +4,7 @@ dir=$(pwd)
 olddir=$dir/dotfiles_old
 
 files="
-  .bash_aliases
+  .aliases
   .bash_profile
   .bash_logout
   .bashrc

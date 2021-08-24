@@ -43,8 +43,8 @@
   // terminal
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.profiles.linux": {
-    "bash": {
-      "path": "/bin/bash",
+    "zsh": {
+      "path": "/bin/zsh",
       "color": "terminal.ansiCyan",
       "args": [
         "--login"
@@ -52,7 +52,7 @@
       "overrideName": true
     },
   },
-  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.linux": "zsh",
   //git
   "git.enableSmartCommit": true,
   "git.autofetch": true,

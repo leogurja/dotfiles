@@ -3,12 +3,10 @@ alias c="clear"
 alias q="exit 0"
 alias copy="xclip -sel clip <"
 alias out="shutdown now"
-alias windows="sudo bootctl set-oneshot auto-windows && reboot"
 
 # substitutions
 alias cat="bat"
 alias vim="nvim"
-alias code="code-oss"
 
 # directories
 alias dev="cd ~/Projetos"
@@ -25,3 +23,6 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
 
+windows() {
+  sudo /bin/grub-reboot "Windows Boot Manager (em /dev/nvme0n1p1)" && /bin/reboot
+}

@@ -147,5 +147,6 @@
   "elixir.credo.lintEverything": true,
   "elixir.credo.strictMode": true,
   "elixirLS.dialyzerEnabled": false,
-  "elixirLS.suggestSpecs": false
+  "elixirLS.suggestSpecs": false,
+  "workbench.colorTheme": "Dracula"
 }

@@ -22,7 +22,3 @@ alias grep="grep --color=auto"
 alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
-
-windows() {
-  sudo /bin/grub-reboot "Windows Boot Manager (em /dev/nvme0n1p1)" && /bin/reboot
-}

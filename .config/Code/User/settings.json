@@ -21,6 +21,7 @@
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.colorDecorators": true,
+  // workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": true,
@@ -28,6 +29,10 @@
     "statusBar.background": "#6d47a6",
   },
   "workbench.editor.labelFormat": "short",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "workbench.colorTheme": "Dracula",
   //files
   "files.associations": {
     ".sequelizerc": "javascript",
@@ -44,7 +49,7 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.profiles.linux": {
     "zsh": {
-      "path": "/bin/zsh",
+      "path": "/usr/bin/zsh",
       "color": "terminal.ansiCyan",
       "args": [
         "--login"
@@ -56,6 +61,7 @@
   //git
   "git.enableSmartCommit": true,
   "git.autofetch": true,
+  "git.confirmSync": false,
   // emmet
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
@@ -94,7 +100,7 @@
   "typescript.updateImportsOnFileMove.enabled": "never",
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
-  "typescript.tsserver.log": "verbose",
+  "typescript.tsserver.log": "off",
   "[javascript]": {
     "editor.formatOnSave": false
   },
@@ -116,23 +122,19 @@
   "html.validate.styles": true,
   // css
   "css.validate": true,
-  "scss.validate": true,
   "css.lint.important": "warning",
-  "scss.lint.important": "warning",
   "css.lint.float": "warning",
-  "scss.lint.float": "warning",
   "css.lint.ieHack": "warning",
-  "scss.lint.ieHack": "warning",
   "css.lint.zeroUnits": "warning",
-  "scss.lint.zeroUnits": "warning",
   "css.lint.duplicateProperties": "warning",
+  // scss
+  "scss.validate": true,
+  "scss.lint.important": "warning",
+  "scss.lint.float": "warning",
+  "scss.lint.ieHack": "warning",
+  "scss.lint.zeroUnits": "warning",
   "scss.lint.duplicateProperties": "warning",
-  "liveshare.authenticationProvider": "GitHub",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
-  // ruby
-  "solargraph.useBundler": true,
+  // solargraph
   "solargraph.diagnostics": true,
   "solargraph.completion": true,
   "solargraph.definitions": true,
@@ -142,11 +144,4 @@
   "solargraph.hover": true,
   "solargraph.formatting": true,
   "solargraph.folding": true,
-  "git.confirmSync": false,
-  "elixir.credo.ignoreWarningMessages": true,
-  "elixir.credo.lintEverything": true,
-  "elixir.credo.strictMode": true,
-  "elixirLS.dialyzerEnabled": false,
-  "elixirLS.suggestSpecs": false,
-  "workbench.colorTheme": "Dracula"
 }

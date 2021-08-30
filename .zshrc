@@ -32,10 +32,8 @@ export EDITOR=nvim
 export ANDROID_HOME=~/Android/Sdk
 export PATH="$PATH:$ANDROID_HOME/tools"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
-export PATH="$PATH:/usr/local/bin"
-export PATH="$HOME/.fastlane/bin:$PATH"
-export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/snap/bin"
+export PATH="$PATH:$(yarn global bin)"
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -61,13 +59,15 @@ export PATH="$PATH:$LD_LIBRARY_PATH"
 export TNS_ADMIN="/home/leonardo/.config/sti/oracle"
 export ORACLE_SID=ORCLPDB1
 
+# mysql
+export PATH="$PATH:/home/leonardo/.local/share/sti/mysql-5.7.34-linux-glibc2.12-x86_64/bin"
+
 # rvm
 export PATH="$GEM_HOME/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # starship
 eval "$(starship init zsh)"
-export PATH="$PATH:/home/leonardo/.local/share/sti/mysql-5.7.34-linux-glibc2.12-x86_64/bin"
-

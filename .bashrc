@@ -9,10 +9,8 @@ export ANDROID_HOME=~/Android/Sdk
 # path
 export PATH="$PATH:$ANDROID_HOME/tools"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
-export PATH="$PATH:/usr/local/bin"
-export PATH="$HOME/.fastlane/bin:$PATH"
-export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/snap/bin"
+export PATH="$PATH:$(yarn global bin)"
 
 # Shopt
 shopt -s cmdhist # multi-line commands as single line
@@ -61,6 +59,12 @@ source ~/.gh-completion.sh
 # mysql
 export PATH="$PATH:/home/leonardo/.local/share/sti/mysql-5.7.34-linux-glibc2.12-x86_64/bin"
 
+# oracle
+export LD_LIBRARY_PATH=/home/leonardo/.local/share/sti/instantclient_12_2
+export PATH="$PATH:$LD_LIBRARY_PATH"
+export TNS_ADMIN=/home/leonardo/.config/sti/oracle
+export ORACLE_SID=ORCLPDB1
+
 # rvm
 export PATH="$GEM_HOME/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -70,12 +74,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # starship
 eval "$(starship init bash)"
-
-export LD_LIBRARY_PATH=/home/leonardo/.local/share/sti/instantclient_12_2
-
-export PATH="$PATH:$LD_LIBRARY_PATH"
-
-export TNS_ADMIN=/home/leonardo/.config/sti/oracle
-
-export ORACLE_SID=ORCLPDB1
 

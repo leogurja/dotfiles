@@ -2,7 +2,7 @@
 {
   // editor
   "editor.fontSize": 16,
-  "editor.fontFamily": "Fira Code Retina",
+  "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.rulers": [
     80,
@@ -21,6 +21,7 @@
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.colorDecorators": true,
+  "editor.renderWhitespace": "trailing",
   // workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
@@ -54,7 +55,8 @@
       "args": [
         "--login"
       ],
-      "overrideName": true
+      "overrideName": true,
+      "icon": "terminal-bash"
     },
   },
   "terminal.integrated.defaultProfile.linux": "zsh",

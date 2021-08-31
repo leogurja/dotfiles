@@ -2,7 +2,7 @@
 {
   // editor
   "editor.fontSize": 16,
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "FiraCode Nerd Font",
   "editor.fontLigatures": true,
   "editor.rulers": [
     80,

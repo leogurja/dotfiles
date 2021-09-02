@@ -1,18 +1,18 @@
 # code --list-extensions
 
+aaron-bond.better-comments
+castwide.solargraph
 CoenraadS.bracket-pair-colorizer-2
 CraigMaslowski.erb
 dbaeumer.vscode-eslint
-eamodio.gitlens
-Equinusocio.vsc-community-material-theme
-Equinusocio.vsc-material-theme
-equinusocio.vsc-material-theme-icons
+dracula-theme.theme-dracula
+MS-CEINTL.vscode-language-pack-pt-BR
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
-oderwat.indent-rainbow
 pflannery.vscode-versionlens
 PKief.material-icon-theme
 ritwickdey.LiveServer
 usernamehw.errorlens
 VisualStudioExptTeam.vscodeintellicode
+waderyan.gitblame

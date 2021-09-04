@@ -2,7 +2,6 @@
 
 aaron-bond.better-comments
 castwide.solargraph
-CoenraadS.bracket-pair-colorizer-2
 CraigMaslowski.erb
 dbaeumer.vscode-eslint
 dracula-theme.theme-dracula
@@ -10,6 +9,7 @@ MS-CEINTL.vscode-language-pack-pt-BR
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
 pflannery.vscode-versionlens
 PKief.material-icon-theme
 ritwickdey.LiveServer

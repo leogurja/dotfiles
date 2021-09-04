@@ -22,6 +22,7 @@
   "editor.tabSize": 2,
   "editor.colorDecorators": true,
   "editor.renderWhitespace": "trailing",
+  "editor.bracketPairColorization.enabled": true,
   // workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
@@ -137,6 +138,7 @@
   "scss.lint.zeroUnits": "warning",
   "scss.lint.duplicateProperties": "warning",
   // solargraph
+  "solargraph.useBundler": true,
   "solargraph.diagnostics": true,
   "solargraph.completion": true,
   "solargraph.definitions": true,

@@ -1,7 +1,6 @@
 alias g="git"
 alias c="clear"
 alias q="exit 0"
-alias copy="xclip -sel clip <"
 alias out="shutdown now"
 
 # substitutions
@@ -9,7 +8,6 @@ alias cat="bat"
 alias vim="nvim"
 
 # directories
-alias dev="cd ~/Projetos"
 alias cd..="cd .."
 alias cd...="cd ../.."
 alias cd....="cd ../../.."

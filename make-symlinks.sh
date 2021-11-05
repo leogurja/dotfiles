@@ -9,11 +9,7 @@ files="
   .bash_logout
   .bashrc
   .gitconfig
-  .config/Code/User/settings.json
-  .config/Code/User/keybindings.json
   .config/starship.toml
-  .config/electron-flags.conf
-  .config/electron12-flags.conf
   .gh-completion.sh
   .fonts
   .zshrc

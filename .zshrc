@@ -37,6 +37,7 @@ export PATH="$PATH:$(yarn global bin)"
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
+. "$HOME/.cargo/env"
 
 # go
 export GOPATH=$HOME/go

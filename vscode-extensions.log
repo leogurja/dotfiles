@@ -1,18 +1,21 @@
 # code --list-extensions
 
 aaron-bond.better-comments
+bceskavich.theme-dracula-at-night
 castwide.solargraph
+christian-kohler.npm-intellisense
 CraigMaslowski.erb
 dbaeumer.vscode-eslint
-dracula-theme.theme-dracula
+eamodio.gitlens
 MS-CEINTL.vscode-language-pack-pt-BR
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-vsliveshare.vsliveshare
 pflannery.vscode-versionlens
 PKief.material-icon-theme
 ritwickdey.LiveServer
 usernamehw.errorlens
 VisualStudioExptTeam.vscodeintellicode
-waderyan.gitblame

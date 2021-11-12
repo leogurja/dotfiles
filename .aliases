@@ -4,7 +4,8 @@ alias q="exit 0"
 alias out="shutdown now"
 
 # substitutions
-alias cat="bat"
+alias bat="batcat"
+alias cat="batcat"
 alias vim="nvim"
 
 # directories

@@ -1,11 +1,11 @@
 alias g="git"
 alias c="clear"
 alias q="exit 0"
+alias dev="cd ~/Projetos"
 alias out="shutdown now"
 
 # substitutions
-alias bat="batcat"
-alias cat="batcat"
+alias cat="bat"
 alias vim="nvim"
 
 # directories

@@ -55,9 +55,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # oracle
-export LD_LIBRARY_PATH="/home/leonardo/.local/share/sti/instantclient_12_2"
+export LD_LIBRARY_PATH=/home/leonardo/.local/share/sti/instantclient_12_2
 export PATH="$PATH:$LD_LIBRARY_PATH"
-export TNS_ADMIN="/home/leonardo/.config/sti/oracle"
+export TNS_ADMIN=/home/leonardo/.config/sti/oracle
 export ORACLE_SID=ORCLPDB1
 
 # mysql

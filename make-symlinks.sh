@@ -10,8 +10,8 @@ files="
   .bashrc
   .gitconfig
   .config/starship.toml
-  .config/Code/settings.json
-  .config/Code/keybindings.json
+  .config/Code/User/settings.json
+  .config/Code/User/keybindings.json
   .gh-completion.sh
   .fonts
   .zshrc

@@ -2,7 +2,7 @@
 {
   // editor
   "editor.fontSize": 16,
-  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.rulers": [
     80,
@@ -34,7 +34,7 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dracula At Night",
   //files
   "files.associations": {
     ".sequelizerc": "javascript",
@@ -148,4 +148,5 @@
   "solargraph.hover": true,
   "solargraph.formatting": true,
   "solargraph.folding": true,
+  "diffEditor.ignoreTrimWhitespace": false,
 }

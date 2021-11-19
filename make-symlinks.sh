@@ -5,6 +5,7 @@ olddir=$dir/dotfiles_old
 
 files="
   .aliases
+  .env
   .bash_profile
   .bash_logout
   .bashrc
@@ -13,7 +14,6 @@ files="
   .config/Code/User/settings.json
   .config/Code/User/keybindings.json
   .gh-completion.sh
-  .fonts
   .zshrc
 "
 

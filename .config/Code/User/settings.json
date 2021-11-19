@@ -149,4 +149,11 @@
   "solargraph.formatting": true,
   "solargraph.folding": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "redhat.telemetry.enabled": true,
 }

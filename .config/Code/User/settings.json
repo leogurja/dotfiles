@@ -46,7 +46,6 @@
   //explorer
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "explorer.compactFolders": false,
   // terminal
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.profiles.linux": {
@@ -156,4 +155,5 @@
     "**/.factorypath": true
   },
   "redhat.telemetry.enabled": true,
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/leonardo/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
 }

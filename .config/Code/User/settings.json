@@ -23,6 +23,8 @@
   "editor.colorDecorators": true,
   "editor.renderWhitespace": "trailing",
   "editor.bracketPairColorization.enabled": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "phase",
   // workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",

@@ -11,8 +11,6 @@ files="
   .bashrc
   .gitconfig
   .config/starship.toml
-  .config/Code/User/settings.json
-  .config/Code/User/keybindings.json
   .gh-completion.sh
   .zshrc
 "

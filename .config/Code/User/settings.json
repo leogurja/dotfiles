@@ -36,7 +36,7 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
-  "workbench.colorTheme": "Dracula At Night",
+  "workbench.colorTheme": "Dracula",
   //files
   "files.associations": {
     ".sequelizerc": "javascript",
@@ -45,6 +45,7 @@
     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
   },
   "files.hotExit": "off",
+  "files.autoSave": "onFocusChange",
   //explorer
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,

@@ -1,4 +1,4 @@
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH=~/.oh-my-zsh
 
 # oh my zsh config
 plugins=(
@@ -13,26 +13,17 @@ source $ZSH/oh-my-zsh.sh
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# gcloud config
-if [ -f '/home/gurja/google-cloud-sdk/path.zsh.inc' ]; then
-  . '/home/gurja/google-cloud-sdk/path.zsh.inc';
-fi
-
-if [ -f '/home/gurja/google-cloud-sdk/completion.zsh.inc' ]; then
-  . '/home/gurja/google-cloud-sdk/completion.zsh.inc';
-fi
-
-# Alias definitions
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
-fi
-
-if [ -f ~/.env ]; then
-    . ~/.env
-fi
-
-# fzf
+# imports
+[ -f ~/google-cloud-sdk/path.zsh.inc ] && source ~/google-cloud-sdk/path.zsh.inc
+[ -f ~/google-cloud-sdk/completion.zsh.inc ] && source ~/google-cloud-sdk/completion.zsh.inc
+[ -f ~/.gh-completion.sh ] && source ~/.gh-completion.sh
+[ -f ~/.cargo/env ] && source ~/.cargo/env
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.env ] && source ~/.env
+[ -f ~/.aliases ] && source ~/.aliases
+[ -f "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -f ~/.sdkman/bin/sdkman-init.sh ] && source ~/.sdkman/bin/sdkman-init.sh
+[ -f ~/.rvm/scripts/rvm ] && source ~/.rvm/scripts/rvm
 
 # starship
 eval "$(starship init zsh)"

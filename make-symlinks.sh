@@ -6,9 +6,6 @@ olddir=$dir/dotfiles_old
 files="
   .aliases
   .env
-  .bash_profile
-  .bash_logout
-  .bashrc
   .gitconfig
   .config/starship.toml
   .gh-completion.sh

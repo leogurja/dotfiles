@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 ./install-nvm.sh && \
 ./install-rustup.sh && \
 ./install-sdkman.sh && \

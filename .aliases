@@ -1,20 +1,18 @@
+#!/bin/zsh
+
 alias g="git"
 alias c="clear"
 alias q="exit 0"
 alias dev="cd ~/Projetos"
 alias out="shutdown now"
+alias copy="xclip -sel clipboard <"
 
 # substitutions
 alias cat="bat"
 alias vim="nvim"
 
-# directories
-alias cd..="cd .."
-alias cd...="cd ../.."
-alias cd....="cd ../../.."
-
 # colors
-alias ls="ls --color=auto"
+alias ls="ls -lah --color=auto"
 alias grep="grep --color=auto"
 
 # confirm before overwriting

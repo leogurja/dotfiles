@@ -21,16 +21,6 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.env ] && source ~/.env
 [ -f ~/.aliases ] && source ~/.aliases
-[ -f "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -f ~/.sdkman/bin/sdkman-init.sh ] && source ~/.sdkman/bin/sdkman-init.sh
-[ -f ~/.rvm/scripts/rvm ] && source ~/.rvm/scripts/rvm
 
 # starship
 eval "$(starship init zsh)"
-
-export LD_LIBRARY_PATH=/home/leonardo/.local/share/sti/instantclient_12_2
-
-export TNS_ADMIN=/home/leonardo/.config/sti/oracle
-
-export ORACLE_SID=ORCLPDB1
-

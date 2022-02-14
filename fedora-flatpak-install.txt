@@ -12,4 +12,4 @@ org.gnome.Totem
 org.gnome.baobab
 org.gnome.eog
 org.kde.krita
-org.mozilla.firefox
+com.nordpass.nordpass

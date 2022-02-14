@@ -1,0 +1,15 @@
+com.discordapp.Discord
+com.getpostman.Postman
+com.mattjakeman.ExtensionManager
+com.obsproject.Studio
+com.slack.Slack
+com.spotify.Client
+org.gnome.Boxes
+org.gnome.Calculator
+org.gnome.Evince
+org.gnome.FileRoller
+org.gnome.Totem
+org.gnome.baobab
+org.gnome.eog
+org.kde.krita
+org.mozilla.firefox

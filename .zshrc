@@ -28,3 +28,9 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # starship
 eval "$(starship init zsh)"
 
+export LD_LIBRARY_PATH=/home/leonardo/.local/share/sti/instantclient_12_2
+
+export TNS_ADMIN=/home/leonardo/.config/sti/oracle
+
+export ORACLE_SID=ORCLPDB1
+

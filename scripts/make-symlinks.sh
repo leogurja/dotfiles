@@ -4,8 +4,6 @@ dir="$(pwd)"
 olddir=$dir/dotfiles_old
 
 files="
-  .aliases
-  .env
   .gitconfig
   .config/starship.toml
   .gh-completion.sh

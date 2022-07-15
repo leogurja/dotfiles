@@ -6,6 +6,7 @@ olddir=$dir/dotfiles_old
 files="
   .gitconfig
   .config/starship.toml
+  .config/nvim
   .gh-completion.sh
   .zshrc
 "

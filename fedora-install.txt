@@ -1,8 +1,0 @@
-bat
-fira-code-fonts
-gnome-tweaks
-neovim
-xclip
-zsh
-code
-brave-browser

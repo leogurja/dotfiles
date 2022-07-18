@@ -1,12 +1,13 @@
 #!/bin/bash
 
-dir="$(pwd)"
+dir="$(pwd)/home"
 olddir=$dir/dotfiles_old
 
 files="
   .gitconfig
   .config/starship.toml
   .config/nvim
+  .hyper.js
   .gh-completion.sh
   .zshrc
 "

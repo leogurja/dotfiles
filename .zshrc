@@ -23,6 +23,8 @@ export PATH="$PATH:$GOPATH/bin"
 [ -f ~/.gh-completion.sh ] && source ~/.gh-completion.sh
 [ -f ~/.cargo/env ] && source ~/.cargo/env
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.local/bin/sti-load ] && source ~/.local/bin/sti-load
+[ -f ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
 
 # aliases
 alias g="git"

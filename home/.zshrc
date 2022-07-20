@@ -11,12 +11,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Environment Variables
 export EDITOR=nvim
+export PATH="$PATH:$HOME/.local/bin"
 
 # imports
 [ -f ~/.gh-completion.sh ] && source ~/.gh-completion.sh
 [ -f ~/.cargo/env ] && source ~/.cargo/env
-[ -f ~/.local/bin/sti-load ] && source ~/.local/bin/sti-load
-[ -f ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
 
 # aliases
 alias g="git"

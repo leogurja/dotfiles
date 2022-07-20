@@ -7,7 +7,7 @@ files="
   .gitconfig
   .config/starship.toml
   .config/nvim
-  .hyper.js
+  .config/lvim/config.lua
   .gh-completion.sh
   .zshrc
 "

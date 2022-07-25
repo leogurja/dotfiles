@@ -11,7 +11,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Environment Variables
 export EDITOR=nvim
-export PATH="$PATH:$HOME/.local/bin"
+export JAVA_HOME="$HOME/.asdf/installs/java/zulu-18.30.11"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/share/npm/bin:$PATH"
 
 # imports
 [ -f ~/.gh-completion.sh ] && source ~/.gh-completion.sh
@@ -29,6 +32,9 @@ alias grep="grep --color=auto"
 alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
+alias vim="lvim"
+alias nvim="lvim"
 
 # starship
 eval "$(starship init zsh)"
+[ -f  /home/leonardo/.local/share/npm/bin/sti-env ] && source /home/leonardo/.local/share/npm/bin/sti-env

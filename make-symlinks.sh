@@ -8,6 +8,8 @@ files="
   .config/starship.toml
   .config/lvim/config.lua
   .gh-completion.sh
+  .asdfrc
+  .tool-versions
   .zshrc
 "
 

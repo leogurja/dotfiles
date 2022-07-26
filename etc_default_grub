@@ -1,0 +1,1 @@
+GRUB_CMDLINE_LINUX="rhgb quiet mitigations=off"

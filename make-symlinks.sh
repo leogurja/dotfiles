@@ -7,6 +7,7 @@ files="
   .gitconfig
   .config/starship.toml
   .config/lvim/config.lua
+  .local/share/fonts
   .gh-completion.sh
   .asdfrc
   .tool-versions
@@ -24,7 +25,7 @@ cd $dir
 echo "done"
 
 for file in $files; do
-  mv ~/$file $olddir
+  [ -s ~/$file ] && mv ~/$file $olddir
   echo "Creating symlink to $file in home directory."
   ln -s $dir/$file ~/$file
 done

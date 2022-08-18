@@ -10,6 +10,7 @@ files="
   .config/lvim/config.lua
   .config/nvim
   .config/fish
+  .config/kitty
   .local/share/fonts
   .asdfrc
   .tool-versions

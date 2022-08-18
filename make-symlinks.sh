@@ -5,6 +5,7 @@ olddir=$dir/dotfiles_old
 
 files="
   .gitconfig
+  .hyper.js
   .config/starship.toml
   .config/lvim/config.lua
   .config/nvim

@@ -11,14 +11,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Environment Variables
 export EDITOR=nvim
-export JAVA_HOME="$HOME/.asdf/installs/java/zulu-18.30.11"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/.local/share/npm/bin:$PATH"
 
 # imports
 [ -f ~/.gh-completion.sh ] && source ~/.gh-completion.sh
 [ -f ~/.cargo/env ] && source ~/.cargo/env
+hash asdf && source $(asdf which sti-env)
 
 asdf_update_java_home() {
   local java_path
@@ -50,4 +49,3 @@ alias nvim="lvim"
 
 # starship
 eval "$(starship init zsh)"
-[ -f  /home/leonardo/.local/share/npm/bin/sti-env ] && source /home/leonardo/.local/share/npm/bin/sti-env

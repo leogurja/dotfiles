@@ -7,11 +7,11 @@ files="
   .gitconfig
   .config/starship.toml
   .config/lvim/config.lua
+  .config/nvim
+  .config/fish
   .local/share/fonts
-  .gh-completion.sh
   .asdfrc
   .tool-versions
-  .zshrc
 "
 
 # create dotfiles_old in homedir

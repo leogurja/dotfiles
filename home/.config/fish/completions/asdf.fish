@@ -1,0 +1,1 @@
+/home/gurgel/.asdf/completions/asdf.fish

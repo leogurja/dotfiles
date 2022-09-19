@@ -1,1 +1,1 @@
-[ -f $(asdf which sti-env) ] && $(asdf which sti-env)
+[ -f $(asdf which sti-env) ] && source $(asdf which sti-env)

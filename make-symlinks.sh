@@ -5,15 +5,11 @@ olddir=$dir/dotfiles_old
 
 files="
   .gitconfig
-  .hyper.js
   .config/starship.toml
-  .config/lvim/config.lua
   .config/nvim
   .config/fish
-  .config/kitty
   .local/share/fonts
   .asdfrc
-  .tool-versions
 "
 
 # create dotfiles_old in homedir

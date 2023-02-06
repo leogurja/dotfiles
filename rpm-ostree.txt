@@ -1,0 +1,6 @@
+RemovedBasePackages: firefox firefox-langpacks 109.0.1-1.fc37
+                           gnome-shell-extension-window-list gnome-classic-session gnome-shell-extension-background-logo gnome-shell-extension-launch-new-instance gnome-shell-extension-apps-menu gnome-shell-extension-places-menu 43.0-1.fc37
+                           gnome-terminal gnome-terminal-nautilus 3.46.7-1.fc37 gnome-tour 43.0-2.fc37 yelp 2:42.2-1.fc37
+          LayeredPackages: bat chromium cups-devel docker fish gcc gdbm-devel gnome-tweaks libffi-devel libgda libicu-devel libnsl libyaml-devel make mysql mysql-devel mysql-server ncurses-devel neofetch neovim NetworkManager-fortisslvpn nodejs npm patch
+                           perl perl-FindBin readline-devel redis ripgrep wl-clipboard zlib-devel
+            LocalPackages: code-1.74.3-1673284922.el7.x86_64

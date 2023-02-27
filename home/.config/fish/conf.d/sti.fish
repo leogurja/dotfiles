@@ -1,1 +1,1 @@
-eval $(sti env fish)
+sti env fish | source

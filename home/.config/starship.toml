@@ -17,8 +17,8 @@ $character"""
 
 
 [character]
-success_symbol = "[➜](bold green)"
-error_symbol = "[➜](bold red)"
+success_symbol = "[\\$](green)"
+error_symbol = "[\\$](red)"
 
 [cmd_duration]
 min_time = 1_000
@@ -33,6 +33,7 @@ disabled = false
 
 [status]
 disabled = false
+symbol = "x "
 
 [username]
 show_always = true

@@ -11,3 +11,5 @@
 	insteadOf = git://
 [http]
 	postBuffer = 15728640
+[push]
+	autoSetupRemote = true

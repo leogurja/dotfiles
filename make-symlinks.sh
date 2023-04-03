@@ -10,6 +10,7 @@ files="
   .config/fish
   .local/share/fonts
   .asdfrc
+  .tool-versions
 "
 
 # create dotfiles_old in homedir

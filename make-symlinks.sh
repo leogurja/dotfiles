@@ -9,6 +9,7 @@ files="
   .config/nvim
   .config/fish
   .local/share/fonts
+  .local/environment/ff-wayland.conf
   .asdfrc
   .tool-versions
 "

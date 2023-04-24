@@ -6,7 +6,6 @@ return {
 	{ import = "astrocommunity.indent.indent-tools-nvim" },
 	{ import = "astrocommunity.git.git-blame-nvim" },
 	{ import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
-	{ import = "astrocommunity.media.presence-nvim" },
 	{ import = "astrocommunity.pack.astro" },
 	{ import = "astrocommunity.pack.bash" },
 	{ import = "astrocommunity.pack.cmake" },

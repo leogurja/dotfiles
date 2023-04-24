@@ -6,7 +6,7 @@ olddir=$dir/dotfiles_old
 files="
   .gitconfig
   .config/starship.toml
-  .config/nvim
+  .config/nvim/lua/user
   .config/fish
   .local/share/fonts
   .local/environment/ff-wayland.conf

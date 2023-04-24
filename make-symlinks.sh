@@ -7,6 +7,7 @@ files="
   .gitconfig
   .config/starship.toml
   .config/nvim/lua/user
+  .var/app/com.raggesilver.BlackBox/data/blackbox/schemes
   .config/fish
   .local/share/fonts
   .local/environment/ff-wayland.conf

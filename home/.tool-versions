@@ -1,4 +1,2 @@
-java zulu-20.28.85
-maven 4.0.0-alpha-5
-nodejs 19.8.1
-ruby 3.1.2
+nodejs 20.0.0
+ruby 3.2.2

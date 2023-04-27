@@ -1,1 +1,1 @@
-sti env fish | source
+[ -s sti ] && sti env fish | source

@@ -8,7 +8,6 @@ files="
   .var/app/com.raggesilver.BlackBox/data/blackbox/schemes
   .config/fish
   .local/share/fonts
-  .npmrc
   .asdfrc
   .tool-versions
 "

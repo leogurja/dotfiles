@@ -1,11 +1,11 @@
+#!/bin/bash
+
 dir="$(pwd)/home"
 olddir="$dir/dotfiles_old"
 
 files="
   .gitconfig
   .config/starship.toml
-  .config/nvim/lua/user
-  .var/app/com.raggesilver.BlackBox/data/blackbox/schemes
   .config/fish
   .local/share/fonts
   .asdfrc
@@ -16,7 +16,14 @@ mkdir -p "$olddir"
 cd "$dir"
 
 for file in $files; do
-  [ -s "$HOME/$file" ] && mv $HOME/$file $olddir
-  echo "$dir/$file -> $HOME/$file"
-  ln -sf $dir/$file $HOME/$file
+  if ! [ -L "$HOME/$file" ]; then
+    if [ -s "$HOME/$file" ]; then
+      mv $HOME/$file $olddir
+      echo "Salvando $HOME/$file antigo"
+    fi
+
+    echo "$dir/$file -> $HOME/$file"
+    mkdir -p "$HOME/$file"
+    ln -sf $dir/$file $HOME/$file
+  fi
 done

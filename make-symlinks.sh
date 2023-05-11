@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir="$(pwd)/home"
+dir=$(pwd)
 olddir="$dir/dotfiles_old"
 
 files="

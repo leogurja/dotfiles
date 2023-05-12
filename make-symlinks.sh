@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir="$(pwd)/home"
+dir=$(pwd)
 olddir="$dir/dotfiles_old"
 
 files="
@@ -16,14 +16,15 @@ mkdir -p "$olddir"
 cd "$dir"
 
 for file in $files; do
-  if ! [ -L "$HOME/$file" ]; then
-    if [ -s "$HOME/$file" ]; then
-      mv $HOME/$file $olddir
-      echo "Salvando $HOME/$file antigo"
-    fi
-
-    echo "$dir/$file -> $HOME/$file"
-    mkdir -p "$HOME/$file"
-    ln -sf $dir/$file $HOME/$file
+  if [ -e "$HOME/$file" ] && [ ! -L "$HOME/$file" ]; then
+    echo "Salvando $HOME/$file antigo"
+    mv $HOME/$file $olddir
   fi
+
+  if [ -L "$HOME/$file" ]; then
+    rm "$HOME/$file"
+  fi
+
+  echo "$dir/$file -> $HOME/$file"
+  ln -sf $dir/$file $HOME/$file
 done

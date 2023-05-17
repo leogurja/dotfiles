@@ -1,34 +1,31 @@
-# Nala
-sudo apt install nala
-sudo nala update
-sudo nala upgrade
-sudo nala install git gh gnome-tweaks flatpak gnome-software gnome-software-plugin-flatpak \
-  deborphan neovim fish ratbagd bat gnome-shell-extension-manager \
-  gnome-shell-extension-alphabetical-grid gnome-console curl
-sudo nala purge seahorse switcheroo-control gnome-remote-desktop gnome-logs gnome-font-viewer \
-  gnome-characters gnome-calculator nautilus-extension-gnome-terminal evince eog nano \
-  vim-tiny update-manager update-notifier gnome-power-manager \
-  software-properties-gtk yelp gnome-startup-applications gnome-shell-extension-desktop-icons-ng \
-  gnome-shell-extension-ubuntu-dock gnome-terminal network-manager-gnome snapd
-sudo nala autoremove
+#!/bin/bash
 
-# other
+# dnf
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+sudo dnf remove firefox gnome-terminal gnome-tour yelp
+sudo dnf install libratbag-ratbagd neovim gnome-console fish code podman gnome-tweaks
+
+sudo usermod -s $(which fish) $USER
+
+# starship
 curl -sS https://starship.rs/install.sh | sh
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 
-# dotfiles
-gh auth login
-gh repo clone gurgelio/dotfiles
+# enable podman socket for com.github.marhkb.Pods
+systemctl --user enable --now podman.socket
 
 # flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install com.github.tchx84.Flatseal com.github.wwmm.easyeffects com.usebottles.bottles \
+flatpak remote-delete fedora
+flatpak install org.mozilla.firefox com.github.tchx84.Flatseal com.github.wwmm.easyeffects com.usebottles.bottles \
   com.valvesoftware.Steam de.haeckerfelix.Fragments org.freedesktop.Piper org.gnome.Boxes \
-  org.gnome.Calculator org.gnome.Evince org.gnome.FileRoller org.gnome.Loupe org.gnome.NautilusPreviewer \
-  org.gnome.Totem org.kde.krita com.spotify.Client com.discord.Discord rest.insomnia.Insomnia
+  org.gnome.Calculator org.gnome.Evince org.gnome.Loupe org.gnome.NautilusPreviewer \
+  org.gnome.Totem org.kde.krita com.spotify.Client com.discordapp.Discord rest.insomnia.Insomnia \
+  com.github.marhkb.Pods com.mattjakeman.ExtensionManager
 
-# trocar de shell padrão
-sudo chsh -s /usr/bin/fish
+flatpak override com.usebottles.bottles --user --filesystem=xdg-data/applications
+
 
 # criar os symlinks
 ./make-symlinks.sh
+
+

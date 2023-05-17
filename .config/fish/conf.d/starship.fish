@@ -1,3 +1,3 @@
 if status is-interactive
-    eval $(starship init fish)
+    starship init fish | source
 end

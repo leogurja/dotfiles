@@ -1,0 +1,3 @@
+[submodule "asdf"]
+	path = asdf
+	url = ./asdf

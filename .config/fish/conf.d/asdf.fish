@@ -1,1 +1,1 @@
-../../../asdf/asdf.fish
+source $HOME/.asdf/asdf.fish

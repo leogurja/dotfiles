@@ -8,6 +8,7 @@ files="
   .config/starship.toml
   .config/fish
   .local/share/fonts
+  .asdf
   .asdfrc
 "
 

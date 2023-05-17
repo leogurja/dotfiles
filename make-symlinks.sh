@@ -9,7 +9,6 @@ files="
   .config/fish
   .local/share/fonts
   .asdfrc
-  .tool-versions
 "
 
 mkdir -p "$olddir"

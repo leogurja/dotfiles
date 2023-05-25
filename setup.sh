@@ -1,55 +1,28 @@
 #!/bin/bash
 
-FLATPAK_APPS="
-  com.discordapp.Discord
-  com.github.marhkb.Pods
-  com.github.tchx84.Flatseal
-  com.github.wwmm.easyeffects
-  com.mattjakeman.ExtensionManager
-  com.spotify.Client
-  com.usebottles.bottles
-  com.valvesoftware.Steam
-  de.haeckerfelix.Fragments
-  org.freedesktop.Piper
-  org.gnome.Boxes
-  org.gnome.Calculator
-  org.gnome.Calendar
-  org.gnome.Evince
-  org.gnome.Loupe
-  org.gnome.NautilusPreviewer
-  org.gnome.Totem
-  org.kde.krita
-  org.mozilla.firefox
-  rest.insomnia.Insomnia
-"
+# dnf repos
+sudo rm /etc/yum.repos.d/{fedora-cisco-openh264.repo,_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo,google-chrome.repo,rpmfusion-nonfree-nvidia-driver.repo,rpmfusion-nonfree-steam.repo,fedora-updates-testing-modular.repo,fedora-updates-testing.repo}
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 
-# pacman
-sudo pacman -S neofetch github-cli libratbag neovim fish podman gnome-tweaks
-
-# aur
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
+# packages
+sudo dnf install neofetch gh libratbag-ratbagd neovim fish podman code
+curl -sS https://starship.rs/install.sh | sh
 
 # set defaults
 sudo usermod -s $(which fish) $USER
 xdg-mime default code.desktop text/plain
 
-# starship
-curl -sS https://starship.rs/install.sh | sh
-
 
 # flatpak
 flatpak remote-delete fedora
 flatpak remote-delete fedora-testing
-flatpak remote-modify --no-filter --enable flathub
-flatpak install $FLATPAK_APPS
+flatpak remote-delete flathub
+flatpak remote-add --user flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak override com.usebottles.bottles --user --filesystem=xdg-data/applications
 systemctl --user enable --now podman.socket # enable podman socket for com.github.marhkb.Pods
 
-git submodule update
+git submodule init && git submodule update
 
 # criar os symlinks
 ./make-symlinks.sh
-
-

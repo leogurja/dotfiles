@@ -1,7 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export NLS_LANG:\x1d
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_dev:cd\x20\x7e/Desktop
 SETUVAR _fish_abbr_g:git

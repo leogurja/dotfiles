@@ -10,6 +10,8 @@ files="
   .local/share/fonts
   .asdf
   .asdfrc
+  .bashrc
+  .bash_logout
 "
 
 mkdir -p "$olddir"

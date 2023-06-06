@@ -39,6 +39,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
+alias q='exit 0'
 alias dev='cd ~/Desktop && apx enter'
 
 # Add an "alert" alias for long running commands.  Use like so:

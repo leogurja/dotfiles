@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # packages
-sudo abroot exec apt install ratbagd gamemode epiphany-browser- totem- gnome-music-
+sudo abroot exec apt install ratbagd gamemode epiphany-browser- totem- gnome-music- eog-
 curl -sS https://starship.rs/install.sh | sh
 curl https://az764295.vo.msecnd.net/stable/b3e4e68a0bc097f0ae7907b217c1119af9e03435/code_1.78.2-1683731010_amd64.deb -o ~/Downloads/code.deb
 

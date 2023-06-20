@@ -40,7 +40,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
 alias q='exit 0'
-alias dev='cd ~/Desktop && apx enter'
+alias dev='cd ~/Desktop && distrobox enter'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

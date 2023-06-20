@@ -12,6 +12,8 @@ files="
   .asdfrc
   .bashrc
   .bash_logout
+  ~/.local/share/flatpak/overrides
+  ~/.config/distrobox
 "
 
 mkdir -p "$olddir"
@@ -30,3 +32,5 @@ for file in $files; do
   echo "$dir/$file -> $HOME/$file"
   ln -sf $dir/$file $HOME/$file
 done
+
+git submodule init && git submodule update

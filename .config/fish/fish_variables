@@ -3,7 +3,6 @@
 SETUVAR --export NLS_LANG:\x1d
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_c:clear
-SETUVAR _fish_abbr_dev:cd\x20\x7e/Desktop
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ll:ls\x20\x2dla
 SETUVAR _fish_abbr_q:exit\x200

@@ -31,6 +31,9 @@ tag_disabled = false
 [git_metrics]
 disabled = false
 
+[hostname]
+ssh_only = false
+
 [status]
 disabled = false
 symbol = "x "

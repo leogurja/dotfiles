@@ -12,8 +12,8 @@ files="
   .asdfrc
   .bashrc
   .bash_logout
-  ~/.local/share/flatpak/overrides
-  ~/.config/distrobox
+  .local/share/flatpak/overrides
+  .config/distrobox
 "
 
 mkdir -p "$olddir"

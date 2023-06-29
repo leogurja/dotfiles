@@ -10,10 +10,10 @@ files="
   .local/share/fonts
   .asdf
   .asdfrc
-  .bashrc
-  .bash_logout
   .local/share/flatpak/overrides
   .config/distrobox
+  .config/zsh
+  .zshrc
 "
 
 mkdir -p "$olddir"

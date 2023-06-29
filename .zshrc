@@ -21,7 +21,6 @@ export VISUAL=code
 export GOPATH=$XDG_DATA_HOME/go
 
 # zsh
-export HISTFILE=$XDG_CACHE_HOME/zsh/history
 export HISTSIZE=1000
 export SAVEHIST=1000
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh

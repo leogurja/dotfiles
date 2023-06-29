@@ -1,6 +1,3 @@
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
 # XDG
 export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
 export XDG_CACHE_HOME=${XDG_CACHE_HOME:="$HOME/.cache"}
@@ -17,38 +14,24 @@ export PAGER=less
 export VISUAL=code
 
 # CLEANUP HOME USING XDG
-# go
-export GOPATH=$XDG_DATA_HOME/go
-
 # zsh
 export HISTSIZE=1000
 export SAVEHIST=1000
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
-
-# cargo
-export CARGO_HOME=$XDG_DATA_HOME/cargo
-
-# npm
-export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
-
-# rubygems
-export GEM_PATH=$XDG_DATA_HOME/ruby/gems
-export GEM_SPEC_CACHE=$XDG_DATA_HOME/ruby/specs
-export GEM_HOME=$XDG_DATA_HOME/ruby/gems
 
 # aliases
 alias c=clear
 alias g=git
 alias vim=nvim
 alias q="exit 0"
-alias dev="cd ~/Área\ de\ trabalho"
+alias dev="cd $HOME/Área\ de\ trabalho"
 alias ll="ls -la"
 
 # asdf
-[[ -s ~/.asdf/asdf.sh ]] && source ~/.asdf/asdf.sh
+source "$HOME/.asdf/asdf.sh"
 
 # starship
-which starship > /dev/null && eval $(starship init zsh)
+eval "$(starship init zsh)"
 
 # completion
 fpath=(${ASDF_DIR}/completions $ZDOTDIR/completions $fpath) # append completions to fpath

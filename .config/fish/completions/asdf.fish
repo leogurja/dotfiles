@@ -1,1 +1,1 @@
-../../../asdf/completions/asdf.fish
+../../../.asdf/completions/asdf.fish

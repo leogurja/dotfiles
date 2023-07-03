@@ -24,7 +24,7 @@ alias c=clear
 alias g=git
 alias vim=nvim
 alias q="exit 0"
-alias dev="cd $HOME/Área\ de\ trabalho"
+alias dev="cd $HOME/Desktop"
 alias ll="ls -la"
 
 # asdf

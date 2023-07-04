@@ -14,6 +14,7 @@ export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
 # CLEANUP HOME USING XDG
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh # zshrc
 export ZSH="$ZDOTDIR/ohmyzsh" # ohmyzsh
+export ZSH_CUSTOM="$ZDOTDIR/custom" # zsh plugins
 
 # Plugins
 plugins=(

@@ -1,4 +1,4 @@
-[submodule ".asdf"]
+[submodule "asdf"]
 	path = .asdf
 	url = https://github.com/asdf-vm/asdf.git
 
@@ -7,9 +7,9 @@
   url = https://github.com/robbyrussell/oh-my-zsh.git
 
 [submodule "zsh-syntax-highlighting"]
-  path = .config/zsh/ohmyzsh/custom/plugins/zsh-syntax-highlighting
-  url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+	path = .config/zsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 [submodule "zsh-autosuggestions"]
-  path = .config/zsh/ohmyzsh/custom/plugins/zsh-autosuggestions
-  url = https://github.com/zsh-users/zsh-autosuggestions.git
+	path = .config/zsh/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git

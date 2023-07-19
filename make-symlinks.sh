@@ -6,12 +6,14 @@ olddir="$dir/dotfiles_old"
 files="
   .gitconfig
   .config/starship.toml
-  .config/fish
   .asdf
   .asdfrc
   .local/share/flatpak/overrides
+  .config/Code/User/keybindings.json
+  .config/Code/User/settings.json
   .config/distrobox
   .config/zsh
+  .vscode/extensions/extensions.json
   .zshrc
 "
 

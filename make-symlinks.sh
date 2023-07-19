@@ -7,7 +7,6 @@ files="
   .gitconfig
   .config/starship.toml
   .config/fish
-  .local/share/fonts
   .asdf
   .asdfrc
   .local/share/flatpak/overrides

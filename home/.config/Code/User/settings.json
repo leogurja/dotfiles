@@ -14,7 +14,7 @@
   "editor.cursorSurroundingLines": 12,
   "editor.detectIndentation": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "IntelOne Mono",
+  "editor.fontFamily": "IntelOneMono Nerd Font",
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,

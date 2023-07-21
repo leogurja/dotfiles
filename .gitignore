@@ -1,3 +1,3 @@
 dotfiles_old
-.config/zsh/.zcompdump*
-.config/zsh/.zsh_history
+home/.config/zsh/.zcompdump*
+home/.config/zsh/.zsh_history

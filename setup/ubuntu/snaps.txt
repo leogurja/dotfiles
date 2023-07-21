@@ -1,0 +1,8 @@
+firefox
+snap-store
+gtk-common-themes
+gnome-42-2204
+snapd-desktop-integration
+core22
+bare
+snapd

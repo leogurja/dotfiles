@@ -1,0 +1,13 @@
+curl
+deborphan
+flatpak
+gh
+git
+gnome-shell-extensions
+gnome-software
+gnome-software-plugin-flatpak
+gnome-tweaks
+nala
+neofetch
+ratbagd
+zsh

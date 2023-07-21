@@ -35,3 +35,6 @@ org.gnome.gitlab.YaLTeR.VideoTrimmer
 org.mozilla.firefox
 re.sonny.Workbench
 rest.insomnia.Insomnia
+com.discordapp.Discord
+com.spotify.Client
+com.github.tchx84.Flatseal

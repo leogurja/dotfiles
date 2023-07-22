@@ -9,5 +9,6 @@ gnome-software-plugin-flatpak
 gnome-tweaks
 nala
 neofetch
+neovim
 ratbagd
 zsh

@@ -34,7 +34,7 @@
   "diffEditor.ignoreTrimWhitespace": false,
   // window
   "window.titleBarStyle": "custom",
-  "window.menuBarVisibility": "compact",
+  "window.menuBarVisibility": "toggle",
   // workbench
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.enablePreview": false,
@@ -186,5 +186,6 @@
   "vim.smartRelativeLine": true,
   "vim.smartcase": true,
   "vim.useCtrlKeys": false,
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "adwaita"
 }

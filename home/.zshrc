@@ -23,7 +23,6 @@ plugins=(
   gh
   git
   starship
-  yarn
   zsh-autosuggestions
   zsh-syntax-highlighting
 )

@@ -11,15 +11,12 @@ files="
   .asdfrc
   .local/share/flatpak/overrides
   .local/share/fonts
-  .config/Code/User/keybindings.json
-  .config/Code/User/settings.json
   .config/distrobox
   .config/zsh
-  .vscode/extensions/extensions.json
   .zshrc
 "
 
-mkdir -p "$backup" "$HOME/.vscode" "$HOME/.config/Code/User"
+mkdir -p "$backup"
 
 for file in $files; do
   if [ -e "$HOME/$file" ] && [ ! -L "$HOME/$file" ]; then

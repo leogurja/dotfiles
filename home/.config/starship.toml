@@ -1,6 +1,7 @@
 add_newline = true
 format = """
 $username\
+$container\
 $hostname\
 $directory\
 $git_branch\
@@ -14,7 +15,6 @@ $line_break\
 $jobs\
 $status\
 $character"""
-
 
 [character]
 success_symbol = "[\\$](green)"
@@ -38,5 +38,5 @@ deleted = '-'
 disabled = false
 symbol = "x "
 
-[username]
-show_always = true
+[container]
+format = '[\[$name\]]($style) '

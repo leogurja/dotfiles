@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rpm-ostree upgrade
+flatpak update -y
+distrobox upgrade --all
+asdf update
+asdf plugin update --all

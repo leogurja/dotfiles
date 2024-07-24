@@ -8,10 +8,10 @@ com.google.Chrome
 com.mattjakeman.ExtensionManager
 com.obsproject.Studio
 com.rafaelmardojai.WebfontKitGenerator
-com.raggesilver.BlackBox
 com.spotify.Client
 de.haeckerfelix.Fragments
 io.github.diegoivan.pdf_metadata_editor
+io.gitlab.adhami3310.Converter
 io.gitlab.adhami3310.Footage
 org.gnome.Boxes
 org.gnome.Calculator
@@ -24,4 +24,5 @@ org.gnome.design.Contrast
 org.gnome.design.IconLibrary
 org.gnome.design.SymbolicPreview
 org.kde.krita
+org.mozilla.firefox
 rest.insomnia.Insomnia

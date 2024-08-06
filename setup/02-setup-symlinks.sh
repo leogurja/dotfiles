@@ -5,14 +5,15 @@ home="$root/home"
 backup="$root/dotfiles_old"
 
 files="
-  .config/starship.toml
   .config/asdfrc
+  .config/distrobox
+  .config/fish
   .config/git
+  .config/npmrc
+  .config/starship.toml
   .local/share/asdf
   .local/share/flatpak/overrides
   .local/share/fonts
-  .config/distrobox
-  .config/fish
 "
 
 mkdir -p "$backup"

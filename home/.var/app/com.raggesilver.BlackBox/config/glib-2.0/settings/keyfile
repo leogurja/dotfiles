@@ -1,0 +1,11 @@
+[com/raggesilver/BlackBox]
+window-height=1150
+window-width=1970
+remember-window-size=true
+headerbar-drag-area=true
+floating-controls=false
+show-headerbar=true
+easy-copy-paste=true
+opacity=90
+scrollback-mode=1
+terminal-bell=false

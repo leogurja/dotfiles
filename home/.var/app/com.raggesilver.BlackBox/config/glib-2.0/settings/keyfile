@@ -9,3 +9,4 @@ easy-copy-paste=true
 opacity=90
 scrollback-mode=1
 terminal-bell=false
+notify-process-completion=false

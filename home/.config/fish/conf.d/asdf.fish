@@ -1,1 +1,1 @@
-source $ASDF_DIR/asdf.fish
+[ -s $ASDF_DIR/asdf.fish ] && source $ASDF_DIR/asdf.fish

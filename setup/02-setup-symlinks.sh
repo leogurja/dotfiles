@@ -18,9 +18,9 @@ files="
   .var/app/com.github.wwmm.easyeffects/config/easyeffects/input/solocast.json
 "
 
-hard_link_files="
-  .var/app/com.raggesilver.BlackBox/config/glib-2.0/settings/keyfile
-"
+# hard_link_files="
+#
+# "
 
 mkdir -p "$backup"
 
@@ -38,14 +38,14 @@ for file in $files; do
   ln -sf "$home/$file" $HOME/$file
 done
 
-for file in $hard_link_files; do
-  if [ -e "$HOME/$file" ]; then
-    echo "Salvando $HOME/$file antigo"
-    mv $HOME/$file "$backup"
-  fi
+# for file in $hard_link_files; do
+#   if [ -e "$HOME/$file" ]; then
+#     echo "Salvando $HOME/$file antigo"
+#     mv $HOME/$file "$backup"
+#   fi
 
-  echo "AS HARD LINK: $home/$file -> $HOME/$file"
-  cp -l "$home/$file" $HOME/$file
-done
+#   echo "AS HARD LINK: $home/$file -> $HOME/$file"
+#   cp -l "$home/$file" $HOME/$file
+# done
 
 git submodule init && git submodule update

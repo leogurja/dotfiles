@@ -10,7 +10,7 @@ files="
   .config/fish
   .config/git
   .config/npmrc
-  .config/pipewire/
+  .config/pipewire
   .config/starship.toml
   .local/share/asdf
   .local/share/flatpak/overrides

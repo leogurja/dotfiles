@@ -1,17 +1,11 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export ASDF_CONFIG_FILE:/home/lgurgel/\x2econfig/asdfrc
-SETUVAR --export ASDF_DATA_DIR:/home/lgurgel/\x2elocal/share/asdf\x2dplugins
-SETUVAR --export ASDF_DIR:/home/lgurgel/\x2elocal/share/asdf
 SETUVAR EDITOR:nvim
 SETUVAR NLS_LANG:\x1d
-SETUVAR --export NPM_CONFIG_USERCONFIG:/home/lgurgel/\x2econfig/npmrc
+SETUVAR --export NPM_CONFIG_USERCONFIG:\x7e/\x2econfig/npmrc
 SETUVAR PAGER:less
 SETUVAR TERMINAL:kgx
 SETUVAR VISUAL:code
-SETUVAR XDG_CACHE_HOME:/home/lgurgel/\x2ecache
-SETUVAR XDG_CONFIG_HOME:/home/lgurgel/\x2econfig
-SETUVAR XDG_DATA_HOME:/home/lgurgel/\x2elocal/share
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr

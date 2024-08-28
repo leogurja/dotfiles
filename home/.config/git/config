@@ -13,3 +13,5 @@
 	postBuffer = 15728640
 [push]
 	autoSetupRemote = true
+[advice]
+	detachedHead = false

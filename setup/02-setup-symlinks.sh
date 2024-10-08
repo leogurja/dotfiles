@@ -16,7 +16,6 @@ files="
   .local/share/flatpak/overrides
   .local/share/fonts
   .var/app/com.google.Chrome/config/chrome-flags.conf
-  .var/app/com.github.wwmm.easyeffects/config/easyeffects/input/solocast.json
 "
 
 # hard_link_files="

@@ -1,3 +1,4 @@
+app.devsuite.Ptyxis
 com.belmoussaoui.Obfuscate
 com.discordapp.Discord
 com.github.finefindus.eyedropper
@@ -9,7 +10,6 @@ com.google.Chrome
 com.mattjakeman.ExtensionManager
 com.obsproject.Studio
 com.rafaelmardojai.WebfontKitGenerator
-com.raggesilver.BlackBox
 com.spotify.Client
 de.haeckerfelix.Fragments
 fr.handbrake.ghb

@@ -5,7 +5,6 @@ com.github.finefindus.eyedropper
 com.github.huluti.Curtail
 com.github.marhkb.Pods
 com.github.tchx84.Flatseal
-com.github.wwmm.easyeffects
 com.google.Chrome
 com.mattjakeman.ExtensionManager
 com.obsproject.Studio
@@ -16,7 +15,6 @@ fr.handbrake.ghb
 fr.romainvigier.MetadataCleaner
 io.github.celluloid_player.Celluloid
 io.github.diegoivan.pdf_metadata_editor
-io.github.fabrialberio.pinapp
 io.gitlab.adhami3310.Converter
 io.gitlab.adhami3310.Footage
 io.missioncenter.MissionCenter

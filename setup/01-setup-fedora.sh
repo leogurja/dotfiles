@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPT_DIR=$(dirname $BASH_ARGV[0])
+ROOT=$(git rev-parse --show-toplevel)
 
 # flatpak repos
 flatpak remove --all
@@ -10,7 +10,7 @@ flatpak remote-delete flathub
 flatpak remote-add --user flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # flatpak packages
-flatpak install $(cat $SCRIPT_DIR/flatpak-install.txt)
+flatpak install $(cat $ROOT/setup/flatpak-install.txt)
 
 # dnf repos
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -19,8 +19,8 @@ sudo dnf copr enable atim/starship
 
 # dnf packages
 sudo dnf update
-sudo dnf install -y $(cat $SCRIPT_DIR/dnf-install.txt)
-sudo dnf remove -y $(cat $SCRIPT_DIR/dnf-remove.txt)
+sudo dnf install -y $(cat $ROOT/setup/dnf-install.txt)
+sudo dnf remove -y $(cat $ROOT/setup/dnf-remove.txt)
 sudo dnf autoremove
 
 # fix dual boot clock

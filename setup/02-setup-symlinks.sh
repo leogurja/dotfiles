@@ -15,7 +15,6 @@ files="
   .local/share/asdf
   .local/share/flatpak/overrides
   .local/share/fonts
-  .var/app/com.google.Chrome/config/chrome-flags.conf
 "
 
 # hard_link_files="

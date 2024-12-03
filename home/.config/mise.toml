@@ -1,0 +1,15 @@
+[env]
+MISE_CARGO_HOME = "{{ xdg_data_home }}/cargo"
+MISE_RUSTUP_HOME = "{{ xdg_data_home }}/rustup"
+
+[tools]
+java = "latest"
+node = "lts"
+python = "latest"
+ruby = "latest"
+rust = "1.83.0"
+usage = "latest"
+
+[settings]
+experimental = true
+status.missing_tools = "always"

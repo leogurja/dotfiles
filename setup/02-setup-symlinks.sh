@@ -8,7 +8,7 @@ files="
   .config/distrobox
   .config/fish
   .config/git
-  .config/mise
+  .config/mise.toml
   .config/npmrc
   .config/pipewire
   .config/starship.toml

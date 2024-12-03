@@ -23,7 +23,13 @@ sudo dnf install -y $(cat $ROOT/setup/dnf-install.txt)
 sudo dnf remove -y $(cat $ROOT/setup/dnf-remove.txt)
 sudo dnf autoremove
 
+# add user to docker group
+sudo usermod -aG docker $USER
+
 # fix dual boot clock
 timedatectl set-local-rtc 1
+
+# mise
+curl https://mise.run | sh
 
 chsh -s $(which fish)

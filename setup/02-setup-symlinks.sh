@@ -5,14 +5,13 @@ home="$root/home"
 backup="$root/dotfiles_old"
 
 files="
-  .config/asdfrc
   .config/distrobox
   .config/fish
   .config/git
+  .config/mise
   .config/npmrc
   .config/pipewire
   .config/starship.toml
-  .local/share/asdf
   .local/share/flatpak/overrides
   .local/share/fonts
 "

@@ -4,7 +4,7 @@ MISE_RUSTUP_HOME = "{{ xdg_data_home }}/rustup"
 
 [tools]
 java = "latest"
-node = "lts"
+node = "23"
 python = "latest"
 ruby = "latest"
 rust = "1.83.0"

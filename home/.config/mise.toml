@@ -3,12 +3,12 @@ MISE_CARGO_HOME = "{{ xdg_data_home }}/cargo"
 MISE_RUSTUP_HOME = "{{ xdg_data_home }}/rustup"
 
 [tools]
-deno = "2.1.4"
+deno = "latest"
 java = "latest"
-node = "23.8.0"
+node = "latest"
 python = "latest"
 ruby = "latest"
-rust = "1.83.0"
+rust = "latest"
 usage = "latest"
 
 [settings]

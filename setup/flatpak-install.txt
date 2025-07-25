@@ -1,6 +1,7 @@
 app.devsuite.Ptyxis
 com.belmoussaoui.Obfuscate
 com.discordapp.Discord
+com.felipekinoshita.Wildcard
 com.github.finefindus.eyedropper
 com.github.huluti.Curtail
 com.github.marhkb.Pods
@@ -12,9 +13,7 @@ com.obsproject.Studio
 com.rafaelmardojai.WebfontKitGenerator
 com.spotify.Client
 de.haeckerfelix.Fragments
-dev.alextren.Spot
 fr.handbrake.ghb
-fr.romainvigier.MetadataCleaner
 garden.jamie.Morphosis
 io.github.celluloid_player.Celluloid
 io.github.diegoivan.pdf_metadata_editor
@@ -25,9 +24,9 @@ io.gitlab.adhami3310.Converter
 io.gitlab.adhami3310.Footage
 io.gitlab.theevilskeleton.Upscaler
 it.mijorus.smile
-net.codelogistics.webapps
 net.nokyan.Resources
 org.gabmus.whatip
+org.gimp.GIMP
 org.gnome.Boxes
 org.gnome.Calculator
 org.gnome.Calendar
@@ -39,5 +38,8 @@ org.gnome.TextEditor
 org.gnome.Weather
 org.gnome.baobab
 org.gnome.design.Contrast
+org.inkscape.Inkscape
+org.kde.kdenlive
 org.kde.krita
 org.mozilla.firefox
+re.sonny.OhMySVG

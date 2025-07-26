@@ -1,7 +1,0 @@
-code
-docker
-docker-compose
-fish
-gh
-gnome-tweaks
-starship

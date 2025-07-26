@@ -1,0 +1,16 @@
+baobab
+eof
+gnome-calculator
+gnome-characters
+gnome-clocks
+gnome-font-viewer
+gnome-logs
+gnome-terminal
+gnome-text-editor
+gnome-power-manager
+gnome-system-monitor
+papers
+seahorse
+snapd
+sysprof
+yelp

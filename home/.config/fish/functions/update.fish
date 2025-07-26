@@ -1,8 +1,9 @@
 function update
   set_color -o cyan
-  echo "### DNF ###"
+  echo "### APT ###"
   set_color normal
-  sudo dnf update -y
+  sudo apt-get update -y
+  sudo apt-get upgrade -y
 
   set_color -o cyan
   echo -e "\n### FLATPAK ###"

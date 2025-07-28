@@ -17,7 +17,4 @@ sudo usermod -aG docker $USER
 # fix dual boot clock
 timedatectl set-local-rtc 1
 
-# mise
-curl https://mise.run | sh
-
 chsh -s $(which fish)

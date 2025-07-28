@@ -11,9 +11,9 @@ function update
   flatpak update -y
 
   set_color -o cyan
-  echo -e "\n### MISE ###"
+  echo -e "\n### ASDF ###"
   set_color normal
-  mise up
+  asdf plugin update --all
 
   echo ""
 end

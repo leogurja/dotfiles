@@ -12,7 +12,7 @@ get_setting(){
 }
 
 for file in $( ls "${APPPATH}" | grep -i "chrom" ) ; do
-    
+
     desktopFile="${APPPATH}/${file}"
 
     echo "$file"
@@ -30,7 +30,7 @@ for file in $( ls "${APPPATH}" | grep -i "chrom" ) ; do
     if [[ "$icon" != "$wmClass" ]]; then
 
         echo "Updating ${desktopFile}"
-        
+
         sed -i "s/$wmClass/$icon/g" "${desktopFile}"
 
         newIcon=$(get_setting "Icon" "${desktopFile}")
@@ -38,7 +38,6 @@ for file in $( ls "${APPPATH}" | grep -i "chrom" ) ; do
 
         NewwmClass=$(get_setting "StartupWMClass" "${desktopFile}")
         echo "  - New Window Class: $NewwmClass"
-    
     else
         echo "  !! No Update Needed"
 

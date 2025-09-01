@@ -13,6 +13,7 @@ flatpak install -y $(cat $root/packages/flatpak-install.txt)
 
 # add user to docker group
 sudo usermod -aG docker $USER
+sg docker -c "docker network create development-network"
 
 # fix dual boot clock
 timedatectl set-local-rtc 1

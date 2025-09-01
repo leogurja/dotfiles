@@ -23,8 +23,10 @@ DESKTOP_ENTRY_PATH="${HOME}/.local/share/applications/$APP_NAME.desktop"
 ICON_FOLDER="${HOME}/.local/share/icons"
 mkdir -p "${ICON_FOLDER}"
 
-mkdir -p ~/Programs
-mv $APPIMAGE_PATH "~/Programs/$APPNAME"
+chmod +x $APPIMAGE_PATH
+mkdir -p $HOME/Programs
+mv $APPIMAGE_PATH "$HOME/Programs"
+
 
 if [ "$2" == "--remove" ]; then
     rm -f "$DESKTOP_ENTRY_PATH"
@@ -34,8 +36,7 @@ if [ "$2" == "--remove" ]; then
 fi
 
 pushd $TEMP_SQUASHFS_PATH
-chmod +x $APPIMAGE_FULLPATH
-"$APPIMAGE_FULLPATH" --appimage-extract > /dev/null
+"$HOME/Programs/$APPNAME" --appimage-extract > /dev/null
 cd squashfs-root/
 
 echo "Choose icon: "
@@ -58,7 +59,7 @@ cat <<EOT > "$DESKTOP_ENTRY_PATH"
 [Desktop Entry]
 Name=$APP_NAME
 StartupWMClass=$APP_NAME
-Exec="$APPIMAGE_FULLPATH"
+Exec="$HOME/Programs/$APPNAME"
 Icon=$ICON_DST
 Type=Application
 Terminal=false

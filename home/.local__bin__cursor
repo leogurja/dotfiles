@@ -1,0 +1,3 @@
+#!/bin/bash
+
+"$HOME/Programs/Cursor.AppImage" --no-sandbox --new-window $1 > /dev/null 2>&1 &

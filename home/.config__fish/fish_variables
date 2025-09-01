@@ -1,5 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export ASDF_CONFIG_FILE:/home/gurja/\x2econfig/asdfrc
+SETUVAR --export ASDF_DATA_DIR:/home/gurja/\x2elocal/share/asdf
 SETUVAR EDITOR:nvim
 SETUVAR NLS_LANG:\x1d
 SETUVAR --export NPM_CONFIG_USERCONFIG:\x7e/\x2econfig/npmrc

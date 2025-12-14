@@ -9,13 +9,13 @@ It's really simple yet powerful.
 This will create all symlinks needed
 
 ```bash
-  ./install.sh
+  ./scripts/install.sh
 ```
 
 ## Add a file to the repo
 
 ```bash
-  ./add_config.sh <path/to/config>
+  ./scripts/add_config.sh <path/to/config>
 ```
 
 ## How to manage your own fork

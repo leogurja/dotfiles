@@ -1,0 +1,175 @@
+[
+  {
+    "key": "ctrl+v",
+    "command": "workbench.action.terminal.paste",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-workbench.action.terminal.paste",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "workbench.action.terminal.copySelection",
+    "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "-workbench.action.terminal.copySelection",
+    "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "redo",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+c",
+    "command": "editor.action.addCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+u",
+    "command": "editor.action.removeCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+0",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+j",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+1",
+    "command": "editor.foldLevel1",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+2",
+    "command": "editor.foldLevel2",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+3",
+    "command": "editor.foldLevel3",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+4",
+    "command": "editor.foldLevel4",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+5",
+    "command": "editor.foldLevel5",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+6",
+    "command": "editor.foldLevel6",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+7",
+    "command": "editor.foldLevel7",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+[",
+    "command": "editor.fold",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+]",
+    "command": "editor.unfold",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+/",
+    "command": "editor.toggleLineComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+a",
+    "command": "editor.action.selectAll",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "ctrl+k ctrl+k",
+    "command": "editor.action.deleteAllRight",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+l",
+    "command": "expandLineSelection",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+o",
+    "command": "workbench.action.files.openFolder"
+  },
+  {
+    "key": "ctrl+k ctrl+p",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "ctrl+k ctrl+r",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+k ctrl+s",
+    "command": "workbench.action.files.saveAs"
+  },
+  {
+    "key": "ctrl+k ctrl+w",
+    "command": "workbench.action.closeAllEditors"
+  },
+  {
+    "key": "ctrl+k ctrl+x",
+    "command": "workbench.action.files.saveAll"
+  },
+  {
+    "key": "ctrl+k ctrl+z",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+k ctrl+c",
+    "command": "editor.action.addCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+u",
+    "command": "editor.action.removeCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+k",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+u",
+    "command": "editor.action.transformToUppercase",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+l",
+    "command": "editor.action.transformToLowercase",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+i",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  }
+]

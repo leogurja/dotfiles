@@ -1,3 +1,10 @@
-#!/bin/bash
-
-"$HOME/Programs/Cursor.AppImage" --no-sandbox --new-window $1 > /dev/null 2>&1 &
+#!/bin/sh
+# distrobox_binary
+# name: distrobox
+if [ -z "${CONTAINER_ID}" ]; then
+	exec "/usr/bin/distrobox-enter"  -n distrobox  --  '/usr/bin/cursor'  "$@"
+elif [ -n "${CONTAINER_ID}" ] && [ "${CONTAINER_ID}" != "distrobox" ]; then
+	exec distrobox-host-exec '/home/gurja/.local/bin/cursor' "$@"
+else
+	exec  '/usr/bin/cursor' "$@"
+fi

@@ -1,5 +1,2 @@
 [Session Bus Policy]
 org.kde.plasma.browser.integration=talk
-
-[Context]
-filesystems=~/.local/share

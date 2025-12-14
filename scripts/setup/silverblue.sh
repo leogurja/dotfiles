@@ -2,18 +2,17 @@
 
 root=$(git rev-parse --show-toplevel)
 
-# apt packages
-sudo apt-get install -y $(cat $root/packages/apt-install.txt)
-sudo apt-get purge -y $(cat $root/packages/apt-purge.txt)
-sudo apt-get autoremove -y
+# ostree packages
+rpm-ostree install $(cat $root/packages/ostree-install.txt)
+sudo rpm-ostree apply-live --allow-replacement
 
 # flatpak
+flatpak remote-delete fedora
 flatpak remote-add --user flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y $(cat $root/packages/flatpak-install.txt)
 
-# add user to docker group
-sudo usermod -aG docker $USER
-sg docker -c "docker network create development-network"
+# podman
+systemctl --user enable --now podman.socket
 
 # fix dual boot clock
 timedatectl set-local-rtc 1

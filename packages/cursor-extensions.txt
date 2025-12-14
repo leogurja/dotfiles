@@ -1,0 +1,14 @@
+aaron-bond.better-comments
+biomejs.biome
+gruntfuggly.todo-tree
+lokalise.i18n-ally
+ms-playwright.playwright
+naumovs.color-highlight
+pkief.material-icon-theme
+prisma.prisma
+styled-components.vscode-styled-components
+usernamehw.errorlens
+vercel.turbo-vsc
+vitest.explorer
+wix.vscode-import-cost
+yoavbls.pretty-ts-errors

@@ -1,9 +1,13 @@
 function update
   set_color -o cyan
-  echo "### APT ###"
+  echo "### OSTREE ###"
   set_color normal
-  sudo apt-get update -y
-  sudo apt-get upgrade -y
+  rpm-ostree update
+
+  set_color -o cyan
+  echo "### DISTROBOX ###"
+  set_color normal
+  distrobox upgade all
 
   set_color -o cyan
   echo -e "\n### FLATPAK ###"

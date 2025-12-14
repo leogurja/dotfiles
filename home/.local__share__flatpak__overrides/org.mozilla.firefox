@@ -1,5 +1,5 @@
-[Environment]
-MOZ_ENABLE_WAYLAND=1
-
 [Session Bus Policy]
 org.kde.plasma.browser.integration=talk
+
+[Environment]
+MOZ_ENABLE_WAYLAND=1

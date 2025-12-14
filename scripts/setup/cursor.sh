@@ -2,8 +2,5 @@
 
 root=$(git rev-parse --show-toplevel)
 
-extensions=$(cat $root/packages/cursor-extensions.txt)
 
-for extension in $extensions; do
-  cursor --install-extension $extension
-done
+cursor --install-extension $(cat $root/packages/cursor-extensions.txt)

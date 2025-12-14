@@ -1,13 +1,13 @@
 function update
   set_color -o cyan
-  echo "### OSTREE ###"
+  echo "### DNF ###"
   set_color normal
-  rpm-ostree update
+  sudo dnf update -y
 
   set_color -o cyan
   echo "### DISTROBOX ###"
   set_color normal
-  distrobox upgade all
+  distrobox upgrade all
 
   set_color -o cyan
   echo -e "\n### FLATPAK ###"

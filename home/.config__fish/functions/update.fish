@@ -7,7 +7,7 @@ function update
   set_color -o cyan
   echo "### DISTROBOX ###"
   set_color normal
-  distrobox upgrade all
+  distrobox upgrade --all
 
   set_color -o cyan
   echo -e "\n### FLATPAK ###"

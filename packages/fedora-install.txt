@@ -6,3 +6,5 @@ git
 curl
 fish
 cursor
+ripgrep
+podman-compose

@@ -23,11 +23,7 @@ ktnef
 kwalletmanager5
 kdebugsettings
 kwrite
-libreoffice-calc
-libreoffice-math
-libreoffice-impress
-libreoffice-writer
-libreoffice-draw
+libreoffice-*
 mediawriter
 neochat
 okular

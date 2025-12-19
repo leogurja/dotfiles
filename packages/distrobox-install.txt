@@ -1,5 +1,0 @@
-fd
-git
-curl
-fish
-cursor

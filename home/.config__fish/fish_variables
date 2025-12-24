@@ -3,11 +3,18 @@
 SETUVAR --export ASDF_CONFIG_FILE:/home/gurja/\x2econfig/asdfrc
 SETUVAR --export ASDF_DATA_DIR:/home/gurja/\x2elocal/share/asdf
 SETUVAR EDITOR:nvim
+SETUVAR --export HOMEBREW_CELLAR:/home/linuxbrew/\x2elinuxbrew/Cellar
+SETUVAR --export HOMEBREW_PREFIX:/home/linuxbrew/\x2elinuxbrew
+SETUVAR --export --path INFOPATH:/home/linuxbrew/\x2elinuxbrew/share/info\x1e/home/linuxbrew/\x2elinuxbrew/share/info
 SETUVAR NLS_LANG:\x1d
 SETUVAR --export NPM_CONFIG_USERCONFIG:\x7e/\x2econfig/npmrc
 SETUVAR PAGER:less
+SETUVAR --export --path PATH:/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/linuxbrew/\x2elinuxbrew/sbin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/linuxbrew/\x2elinuxbrew/sbin\x1e/home/gurja/\x2elocal/bin\x1e/usr/bin\x1e/home/gurja/\x2elocal/share/pnpm\x1e/home/gurja/\x2elocal/share/asdf/shims\x1e/usr/local/sbin\x1e/usr/local/bin
 SETUVAR TERMINAL:kgx
 SETUVAR VISUAL:code
+SETUVAR --export XDG_CACHE_HOME:/home/gurja/\x2ecache
+SETUVAR --export XDG_CONFIG_HOME:/home/gurja/\x2econfig
+SETUVAR --export XDG_DATA_HOME:/home/gurja/\x2elocal/share
 SETUVAR __fish_initialized:3800
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr

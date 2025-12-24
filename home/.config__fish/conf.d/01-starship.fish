@@ -1,7 +1,7 @@
-if not command -s starship > /dev/null
-  curl -sS https://starship.rs/install.sh | sh
+if not command -s /home/linuxbrew/.linuxbrew/bin/starship > /dev/null
+  /home/linuxbrew/.linuxbrew/bin/brew install starship
 end
 
 if status is-interactive
-  starship init fish | source
+  /home/linuxbrew/.linuxbrew/bin/starship init fish | source
 end

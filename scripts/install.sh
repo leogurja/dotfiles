@@ -14,9 +14,12 @@ mkdir -p "$backup"
 for file in $files; do
   destination="$HOME/$(echo $file | sed 's|__|/|g')"
 
+
   if [ -L "$destination" ]; then
     rm "$destination"
   fi
+
+  mkdir -p "$(dirname "$destination")"
 
   if [ -e "$destination" ]; then
     echo "Salvando $destination antigo"

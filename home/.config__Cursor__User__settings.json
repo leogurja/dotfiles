@@ -104,5 +104,5 @@
   "workbench.startupEditor": "none",
   "biome.lsp.trace.server": "messages",
   "biome.requireConfiguration": true,
-  "workbench.colorTheme": "Adwaita Dark & colorful status bar"
+  "workbench.colorTheme": "Adwaita Dark"
 }

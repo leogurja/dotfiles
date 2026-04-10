@@ -1,7 +1,6 @@
 be.alexandervanhee.gradia
 com.belmoussaoui.Obfuscate
 com.discordapp.Discord
-com.felipekinoshita.Wildcard
 com.getpostman.Postman
 com.github.Matoking.protontricks
 com.github.finefindus.eyedropper
@@ -11,6 +10,7 @@ com.github.tchx84.Flatseal
 com.github.wwmm.easyeffects
 com.google.Chrome
 com.mattjakeman.ExtensionManager
+com.microsoft.Edge
 com.obsproject.Studio
 com.rafaelmardojai.WebfontKitGenerator
 com.ranfdev.DistroShelf
@@ -26,8 +26,9 @@ io.github.wartybix.Constrict
 io.gitlab.adhami3310.Converter
 io.gitlab.theevilskeleton.Upscaler
 io.missioncenter.MissionCenter
+it.mijorus.gearlever
 it.mijorus.smile
-net.codelogistics.webapps
+net.ffkkinos.Wildcard
 org.altlinux.Tuner
 org.gnome.Calculator
 org.gnome.Epiphany
@@ -42,5 +43,7 @@ org.gnome.design.Contrast
 org.gnome.gitlab.YaLTeR.Identity
 org.gnome.gitlab.YaLTeR.VideoTrimmer
 org.kde.kdenlive
+org.kde.krita
 org.libreoffice.LibreOffice
+org.mozilla.firefox
 re.sonny.OhMySVG

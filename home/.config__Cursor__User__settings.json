@@ -1,9 +1,11 @@
 {
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
+  "[javascript][typescript][javascriptreact][typescriptreact][json][jsonc][css][tailwindcss]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
+  "biome.lsp.trace.server": "messages",
+  "biome.requireConfiguration": true,
   "breadcrumbs.enabled": false,
-  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorSurroundingLines": 12,
@@ -92,17 +94,16 @@
   "window.commandCenter": false,
   "window.confirmSaveUntitledWorkspace": false,
   "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "Adwaita Dark",
   "workbench.editor.customLabels.patterns": {
     "**/app/**/layout.tsx": "${dirname} - Layout",
     "**/app/**/page.tsx": "${dirname} - Page",
-    "**/components/**/index.tsx": "${dirname} - Component"
+    "**/index.ts": "${dirname} - index",
+    "**/index.tsx": "${dirname} - index"
   },
   "workbench.editor.limit.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.navigationControl.enabled": false,
-  "workbench.startupEditor": "none",
-  "biome.lsp.trace.server": "messages",
-  "biome.requireConfiguration": true,
-  "workbench.colorTheme": "Adwaita Dark"
+  "workbench.startupEditor": "none"
 }

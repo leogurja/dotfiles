@@ -175,5 +175,9 @@
   {
     "key": "ctrl+i",
     "command": "composerMode.agent"
+  },
+  {
+    "key": "ctrl+alt+t",
+    "command": "workbench.action.terminal.new"
   }
 ]

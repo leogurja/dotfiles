@@ -1,3 +1,3 @@
-function docker --wraps=podman --description 'alias docker podman'
+function docker --wraps=podman --description 'alias docker=podman'
     podman $argv
 end

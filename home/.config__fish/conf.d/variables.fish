@@ -1,0 +1,6 @@
+set -gx EDITOR "nvim"
+set -gx TERMINAL "ptyxis"
+set -gx VISUAL "cursor"
+set -gx XDG_CACHE_HOME "/home/gurja/.cache"
+set -gx XDG_CONFIG_HOME "/home/gurja/.config"
+set -gx XDG_DATA_HOME "/home/gurja/.local/share"

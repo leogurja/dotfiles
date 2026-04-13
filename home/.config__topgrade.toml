@@ -1,0 +1,6 @@
+[misc]
+cleanup = true
+disable = ["node", "pnpm", "git_repos"]
+
+[brew]
+autoremove = true

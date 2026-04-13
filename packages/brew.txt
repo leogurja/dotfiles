@@ -1,5 +1,2 @@
 asdf
-gh
-podman-compose
-starship
 witr

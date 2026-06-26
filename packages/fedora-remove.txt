@@ -23,7 +23,6 @@ libreoffice-*
 mediawriter
 simple-scan
 snapshot
-snapshot
 sushi
 toolbox
 virtualbox-guest-additions

@@ -1,3 +1,6 @@
+set -gx ASDF_CONFIG_FILE "$HOME/.config/asdfrc"
+set -gx ASDF_DATA_DIR "$HOME/.local/share/asdf"
+
 if test -z $ASDF_DATA_DIR
     set _asdf_shims "$HOME/.asdf/shims"
 else

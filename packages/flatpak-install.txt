@@ -16,8 +16,6 @@ com.ranfdev.DistroShelf
 com.spotify.Client
 de.haeckerfelix.Fragments
 de.swsnr.pictureoftheday
-garden.jamie.Morphosis
-io.beekeeperstudio.Studio
 io.github.diegoivan.pdf_metadata_editor
 io.github.flattool.Warehouse
 io.github.kolunmi.Bazaar
@@ -25,6 +23,7 @@ io.github.shonebinu.Defuse
 io.github.wartybix.Constrict
 io.gitlab.adhami3310.Converter
 io.gitlab.theevilskeleton.Upscaler
+it.mijorus.gearlever
 it.mijorus.smile
 net.codelogistics.webapps
 net.davidotek.pupgui2

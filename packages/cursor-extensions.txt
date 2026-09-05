@@ -1,10 +1,12 @@
 aaron-bond.better-comments
+anysphere.remote-ssh
 biomejs.biome
 bradlc.vscode-tailwindcss
 bungcip.better-toml
 editorconfig.editorconfig
 gruntfuggly.todo-tree
 lokalise.i18n-ally
+mikestead.dotenv
 ms-playwright.playwright
 naumovs.color-highlight
 oxc.oxc-vscode
@@ -12,6 +14,7 @@ pkief.material-icon-theme
 redhat.vscode-yaml
 styled-components.vscode-styled-components
 timonwong.shellcheck
+typescriptteam.native-preview
 unifiedjs.vscode-mdx
 usernamehw.errorlens
 vitest.explorer

@@ -2,6 +2,7 @@
 
 root=$(git rev-parse --show-toplevel)
 
-for script in $(ls $root/scripts/dump); do
-  $root/scripts/dump/$script
+for script in "$root/scripts/dump"/*; do
+  # shellcheck source=/dev/null
+  . "$script"
 done

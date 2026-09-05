@@ -2,8 +2,9 @@
 
 root=$(git rev-parse --show-toplevel)
 
-if [ ! -d /home/linuxbrew/.linuxbrew ];
+if [ ! -d /home/linuxbrew/.linuxbrew ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-end
+fi
 
-brew install $(cat $root/packages/brew.txt)
+# shellcheck disable=SC2046
+brew install $(cat "$root/packages/brew.txt")

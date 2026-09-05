@@ -8,8 +8,7 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.codeActionsOnSave": {
     "source.action.noDuplicateClasses.biome": "explicit",
-    "source.fixAll.oxc": "always",
-    "source.sort.json": "explicit"
+    "source.fixAll.oxc": "always"
   },
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -66,13 +65,13 @@
   "files.watcherExclude": {
     "**/.git/**": true,
     "**/.next/**": true,
-    "**/.next/dev/types/**": false,
-    "**/.next/types/**": false,
+    "**/.pnpm-store/**": true,
     "**/.turbo/**": true,
     "**/coverage/**": true,
     "**/dist/**": true,
-    "**/node_modules/**": true,
-    "**/storybook-static/**": true
+    "**/playwright-report/**": true,
+    "**/storybook-static/**": true,
+    "**/test-results/**": true
   },
   "git.autofetch": true,
   "git.blame.editorDecoration.enabled": true,
@@ -87,8 +86,9 @@
   "github.gitProtocol": "ssh",
   "html.format.preserveNewLines": false,
   "html.format.templating": true,
-  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.inlayHints.functionLikeReturnTypes.enabled": true,
+  "js/ts.preferences.importModuleSpecifier": "non-relative",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
   "json.schemaDownload.enable": true,
   "material-icon-theme.folders.theme": "specific",
   "oxc.requireConfig": true,
@@ -96,6 +96,18 @@
   "redhat.telemetry.enabled": true,
   "scm.defaultViewMode": "tree",
   "search.defaultViewMode": "tree",
+  "search.exclude": {
+    "**/.next": true,
+    "**/.next-*": true,
+    "**/.pnpm-store": true,
+    "**/.turbo": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/playwright-report": true,
+    "**/storybook-static": true,
+    "**/test-results": true
+  },
   "search.smartCase": true,
   "security.workspace.trust.untrustedFiles": "open",
   "tailwindCSS.classAttributes": [
@@ -122,10 +134,8 @@
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.stickyScroll.enabled": false,
   "terminal.integrated.tabs.hideCondition": "never",
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "typescript.preferences.importModuleSpecifier": "non-relative",
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "update.mode": "manual",
+  "window.autoDetectColorScheme": true,
   "window.confirmSaveUntitledWorkspace": false,
   "window.titleBarStyle": "native",
   "workbench.editor.customLabels.patterns": {
@@ -136,5 +146,6 @@
   },
   "workbench.editor.limit.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "cursor.composer.editorConversationDensity": "compact-all-grouped"
 }

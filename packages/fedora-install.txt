@@ -1,6 +1,5 @@
 cloc
 curl
-cursor
 distrobox
 fd
 fish

@@ -1,23 +1,40 @@
 # Dotfiles
 
-Here's all my configuration for fish, distrobox, starship and more!
-If you want to build your own dotfiles repo, just fork it and feel free to make the `home/` and `packages/` folders yours.
-It's really simple yet powerful.
+Fish, distrobox, starship and more — managed with [chezmoi](https://www.chezmoi.io/).
 
-## Installation
+## Setup
 
-This will create all symlinks needed
+1. Install chezmoi (`sudo dnf install chezmoi` or `brew install chezmoi`).
+2. Run `chezmoi init user --apply`
 
-```bash
-  ./scripts/install.sh
+```toml
+# ~/.config/chezmoi/chezmoi.toml
+sourceDir = "/path/to/dotfiles"
 ```
 
-## Add a file to the repo
+The repo has `.chezmoiroot` → `home`, so only `home/` is the chezmoi source.
+
+3. Bootstrap packages + apply configs:
 
 ```bash
-  ./scripts/add_config.sh <path/to/config>
+./scripts/bootstrap.sh
 ```
 
-## How to manage your own fork
+Or apply dots only:
 
-The only files you really need are `install.sh` and `add_config.sh`, the rest are just personal configs and utilities
+```bash
+chezmoi apply
+```
+
+## Day to day
+
+```bash
+chezmoi add ~/.config/some/file   # start managing a file
+chezmoi edit ~/.config/fish/config.fish
+chezmoi apply
+chezmoi diff
+```
+
+## Packages
+
+Lists under `packages/`; install scripts under `scripts/setup/`. Dump current state with `./scripts/dump.sh`.

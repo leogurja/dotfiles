@@ -342,6 +342,15 @@
       "skillFolderHash": "daaaceac55b83384dc3685c3b946699b9bc29331",
       "installedAt": "2026-09-10T17:19:07.499Z",
       "updatedAt": "2026-09-10T17:19:07.499Z"
+    },
+    "brag": {
+      "source": "latent-spaces/brag",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/latent-spaces/brag.git",
+      "skillPath": "skills/brag/SKILL.md",
+      "skillFolderHash": "486cb76dac94af36f9d20c13e7e4dd637c8615eb",
+      "installedAt": "2026-09-22T13:26:32.372Z",
+      "updatedAt": "2026-09-22T13:26:32.372Z"
     }
   },
   "dismissed": {

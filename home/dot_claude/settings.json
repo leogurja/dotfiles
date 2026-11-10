@@ -1,7 +1,7 @@
 {
   "hooks": {},
   "skipDangerousModePermissionPrompt": true,
-  "theme": "dark",
+  "theme": "custom:orca",
   "autoMode": {
     "environment": [
       "### Org-wide",
